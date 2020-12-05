@@ -1,0 +1,34 @@
+/*************** PURPLE ***************/
+
+.footer.lb h4 i,
+.service-style-04 a,
+.service-style-04 i,
+.service-style-03 i {
+  color:#f32e59 !important;
+}
+
+.section-title.cpurple h4 {
+  border-bottom-color: #f32e59;
+} 
+
+
+/*************** ORANGE ***************/
+
+a,
+.fa-star,
+.service-desc-01:hover i,
+.service-box:hover h4,
+.navbar-brand:hover i,
+.yamm-fw li a:before,
+.btn.withicon:hover i,
+.btn.withicon:focus i {
+    color:#F2AE8B;
+}
+
+.btn-orange {
+    background-color:#F2AE8B !important;
+}
+.section-title h4 {
+    border-bottom-color:#F2AE8B1;
+}
+
