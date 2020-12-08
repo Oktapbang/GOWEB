@@ -11,20 +11,17 @@
         <meta name="description" content="Megakit - HTML5 Theme">
         <meta name="author" content="keenthemes.com">
 
+
         <style>
             #my_modal {
-                display: none;
-                width: 300px;
-                padding: 20px 60px;
-                background-color: #fefefe;
-                border: 1px solid #888;
-                border-radius: 3px;
+                width: 1200px;
+                height: 700px;
             }
 
             #my_modal .modal_close_btn {
                 position: absolute;
                 top: 10px;
-                right: 10px;
+                right: 13px;
             }
         </style>
 
@@ -36,7 +33,7 @@
         <link href="css/animate.css" rel="stylesheet" type="text/css"/>
         <link href="vendor/themify/themify.css" rel="stylesheet" type="text/css"/>
         <link href="vendor/scrollbar/scrollbar.min.css" rel="stylesheet" type="text/css"/>
-        <link href="vendor/swiper/swiper.min.css" rel="stylesheet" type="text/css"/>
+        
         <link href="vendor/cubeportfolio/css/cubeportfolio.min.css" rel="stylesheet" type="text/css"/>
 
         <!-- Theme Styles -->
@@ -48,6 +45,7 @@
         <link href="css/hori_scroll/style.css" rel="stylesheet">
         <link href="css/hori_scroll/colors.css" rel="stylesheet">
         <link href="css/hori_scroll/bootstrap.css" rel="stylesheet">
+        <link href="css/review_swiper.css" rel="stylesheet" !imporant;>
         <link href="css/font-awesome.min.css" rel="stylesheet">
 
         <!-- Favicon -->
@@ -354,7 +352,7 @@
                         </div>
                         <ul class="list-inline g-ul-li-lr-5--xs g-margin-b-0--xs">
                             <li>
-                                <button id="popup_open_btn">
+                                <button id="popup_open_btn" class="cbp-lightbox s-icon s-icon--sm s-icon--white-bg g-radius--circle">
                                     <i class="ti-fullscreen"></i>
                                 </button>
                             </li>
@@ -397,14 +395,13 @@
                     </div>
                     <div class="s-portfolio__caption-hover--cc">
                         <div class="g-margin-b-25--xs">
-                            <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Portfolio Item</h4>
-                            <p class="g-color--white-opacity">by KeenThemes Inc.</p>
+                            <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">popup test</h4>
+                            <p class="g-color--white-opacity">test</p>
                         </div>
                         <ul class="list-inline g-ul-li-lr-5--xs g-margin-b-0--xs">
                             <li>
-                                <a href="img/400x500/02.jpg" class="cbp-lightbox s-icon s-icon--sm s-icon--white-bg g-radius--circle" data-title="Portfolio Item <br/> by KeenThemes Inc.">
-                                    <i class="ti-fullscreen"></i>
-                                </a>
+                                <a href="/review_test" onclick="window.open(this.href, _blank, width='120px',height='600px',toolbars=no,scrollbars=no); return false;" class="cbp-lightbox s-icon s-icon--sm s-icon--white-bg g-radius--circle"></a>
+                                <i class="ti-fullscreen"></i>
                             </li>
                             <li>
                                 <a href="http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes" class="s-icon s-icon--sm s-icon s-icon--white-bg g-radius--circle">
@@ -602,11 +599,148 @@
         </div>
         <!--========== END PAGE CONTENT ==========-->
 
+        <!--========== POPUP ==========-->
+
         <div id="my_modal">
-            모달창 띄우기
             <a class="modal_close_btn">
                 <i class="ti-fullscreen"></i>
             </a>
+
+            <table width="100%" !important;>
+                <tr>
+                    <td rowspan="2">
+                        <!--========== REVIEW SWIPER SLIDER ==========-->
+                        <div id="slider-wrap">
+                            <ul id="rv-slider">
+                                <li id="rv">
+                                    <img id="rvi" src="img/upload/insta_01.jpg">
+                                </li>
+                        
+                                <li id="rv">
+                                    <img id="rvi"src="https://fakeimg.pl/350x200/D27328/000?text=22222">
+                                </li>
+                        
+                                <li id="rv">
+                                    <img id="rvi" src="https://fakeimg.pl/350x200/FF607F/000?text=33333">
+                                </li>
+                        
+                                <li id="rv">
+                                    <img id="rvi" src="https://fakeimg.pl/350x200/0A6E0A/000?text=44444">
+                                </li>
+                        
+                            </ul>
+                        
+                            <div class="slider-btns" id="next"><span>▶</span></div>
+                            <div class="slider-btns" id="previous"><span>◀</span></div>
+                        
+                            <div id="slider-pagination-wrap">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                            
+                        <!--========== END SWIPER SLIDER ==========-->
+                    </td>
+                    <td width="50%" style="height: 320px; background:white; padding-left: 30px;  padding-right: 30px;" >
+                       <table>
+                        <tr style="height: 50px; padding-top:10px">
+                            <td colspan='5' style="font-size: 27px; color:#5D5D5D; font-weight: bold;  vertical-align:middle;">
+                                공릉하나카페
+                            </td>
+                        </tr>
+                        <tr style="height: 20px; vertical-align: bottom; ">
+                            <td>
+                                @hana_two3
+                            </td>
+                            <td  style=" padding-right: 10px;"> | </td>
+
+                            <td>
+                                12월 06일
+                            </td>
+                            <td  style="padding-left:10px; padding-right: 10px;"> | </td>
+                            <td>
+                                서울_대한민국
+                            </td>
+                        </tr>
+                        <tr  style="height: 180px; vertical-align: top;">
+                            <td colspan='5'style="padding-top:30px; color:#5D5D5D; font-size: 18px; line-height:100%; ">
+                                콘센트가 많아서 공부하기 좋아요! <p> </p>인스타용 사진찍기도 좋습니다.
+                            </td>
+                        </tr>
+                        <tr style="height: 20px">
+                            <td colspan='5' style="color: #F2AE8B;">
+                                #서울 #공릉 #철길 #공부하기좋은 #인스타갬성
+                            </td>
+                        </tr>
+                       </table>
+                    </td>
+                </tr>
+                <tr width="50%" style="background: white;">
+                    <td style="vertical-align: top;">
+                        <hr width="100%"> <!--구분선-->
+                                        <table height="240px" style="color:#5D5D5D;">
+                                            <tr>
+                                                <td colspan='2' style="font-size: 27px; color:#5D5D5D; font-weight: bold; padding-left :30px; padding-top:10px; padding-bottom:10px; vertical-align: top;">
+                                                        COMMENT
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="110px" style="padding-left: 30px;">
+                                                    gyu1234
+                                                </td>
+                                                <td style="padding-left: 20px;">
+                                                    저는 불편했어요
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="110px" style="padding-left: 30px;">
+                                                    gyu1234
+                                                </td>
+                                                <td style="padding-left: 20px;">
+                                                    저는 불편했어요
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="110px" style="padding-left: 30px;">
+                                                    gyu1234
+                                                </td>
+                                                <td style="padding-left: 20px;">
+                                                    저는 불편했어요
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="110px" style="padding-left:30px;">
+                                                    gyu1234
+                                                </td>
+                                                <td style="padding-left: 20px;">
+                                                    저는 불편했어요
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="110px" style="padding-left: 30px;">
+                                                    gyu1234
+                                                </td>
+                                                <td style="padding-left: 20px;">
+                                                    저는 불편했어요
+                                                </td>
+                                            </tr>
+
+
+                                        </table>
+                        <hr width="100%"> <!--구분선-->
+                        <div class="float-left" style="font-size: 32px; color:#5D5D5D; padding-left:30px;">
+                            <a href="#"><i class="fa fa-heart-o"></i> 25</a>
+                            <!-- filled heart = fa fa-heart (font-awesom.min.css)-->
+                        </div>
+
+                        <div class="float-right" style="font-size: 32px; color:#5D5D5D; padding-right:40px;">
+                            <a href="#"><i class="fa fa-download"></i></a>
+                            <!-- filled heart = fa fa-heart (font-awesom.min.css)-->
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
         </div>
 
         <script>
@@ -661,6 +795,8 @@
 
 
 
+
+        <!--========== POPUP END ==========-->
 
 
 
@@ -739,7 +875,8 @@
         <script type="text/javascript" src="js/global.min.js"></script>
         <script type="text/javascript" src="js/components/header-sticky.min.js"></script>
         <script type="text/javascript" src="js/components/scrollbar.min.js"></script>
-        <script type="text/javascript" src="js/components/swiper.min.js"></script>
+
+        <script type="text/javascript" src="js/components/review_swiper.js"></script>
         <script type="text/javascript" src="js/components/portfolio-3-col.min.js"></script>
         <script type="text/javascript" src="js/components/wow.min.js"></script>
 
