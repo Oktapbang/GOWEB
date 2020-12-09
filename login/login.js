@@ -6,6 +6,7 @@ var session = require('express-session');
 var bodyParser = require('body-parser');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
+var MySqlStore = require('express-mysql-session')(session);
 
 var connection = mysql.createConnection({
 	host     : 'localhost',
@@ -17,8 +18,15 @@ var connection = mysql.createConnection({
 var app = express();
 app.use(session({
 	secret: 'secret',
-	resave: true,
-	saveUninitialized: true
+	resave: false,
+	saveUninitialized: true,
+	store : new MySqlStore({
+		host : 'localhost',
+		port : 3306,
+		user : 'web2020',
+		password : 'web2020',
+		database: 'web'
+	})
 }));
 
 app.use(express.static('public'));

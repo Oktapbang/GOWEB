@@ -276,6 +276,32 @@ iframe {
   position: relative;
 }
 
+
+
+.container-comment {
+  width: 100%;  
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background: transparent;
+  position: relative;
+  z-index: 1;
+}
+
+.wrap-comment {
+  width: 670px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
 /*==================================================================
 [ Title form ]*/
 .contact100-form-title {
@@ -344,6 +370,18 @@ iframe {
   padding: 43px 88px 57px 190px;
 }
 
+.contact_comment-form {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
 
 /*------------------------------------------------------------------
 [ Input ]*/
@@ -400,6 +438,19 @@ iframe {
   width: 100%;
   background: transparent;
   padding: 0 5px;
+}
+
+.input_comment {
+  font-family: Poppins-Regular;
+  font-size: 15px;
+  color: #555555;
+  line-height: 0;
+
+  display: block;
+  border: none;
+  width: 100%;
+  background: transparent;
+  padding: 5 5px;
 }
 
 .focus-input100 {
@@ -508,6 +559,8 @@ textarea.input100 {
   -o-transform: translateX(10px);
   transform: translateX(10px);
 }
+
+
 
 
 /*------------------------------------------------------------------

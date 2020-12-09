@@ -157,7 +157,7 @@
                     </span>
                 </div>
     
-                <form class="contact100-form validate-form">
+                <form  action ='/faq/addReview' class="contact100-form validate-form" method='POST' enctype="multipart/form-data">
                     <div class="wrap-input100 validate-input" data-validate="제목을 입력하세요">
                         <span class="label-input100">제목 : </span>
                         <input class="input100" type="text" name="title" placeholder="공부하기 좋은 카페!">
@@ -188,7 +188,7 @@
                         <div class="file-upload preview-image">
                             <input type="text" class="upload-name" value="파일선택1" disabled="disabled">
                             <label for="input-file" style="margin-top: 10px;">업로드</label> 
-                            <input type="file" id="input-file" class="upload-hidden"> 
+                            <input type="file" id="input-file" class="upload-hidden" name ='img'> 
                         </div>
                     </div>
                     
@@ -196,8 +196,8 @@
                         <span class="label-image">사진2 : </span>
                         <div class="file-upload preview-image">
                             <input type="text" class="upload-name" value="파일선택2" disabled="disabled">
-                            <label for="input-file" style="margin-top: 10px;">업로드</label> 
-                            <input type="file" id="input-file2" class="upload-hidden"> 
+                            <label for="input-file2" style="margin-top: 10px;">업로드</label> 
+                            <input type="file" id="input-file2" class="upload-hidden" name ='img'> 
                         </div>
                     </div>
                     
