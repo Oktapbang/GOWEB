@@ -47,3 +47,52 @@
 2020-12-09T10:51:28.642404Z 0 [ERROR] [MY-010020] [Server] Data Dictionary initialization failed.
 2020-12-09T10:51:28.643645Z 0 [ERROR] [MY-010119] [Server] Aborting
 2020-12-09T10:51:28.646739Z 0 [System] [MY-010910] [Server] C:\Users\fishb\Desktop\goweb\GOWEB\mysql-8.0.22-winx64\bin\mysqld.exe: Shutdown complete (mysqld 8.0.22)  MySQL Community Server - GPL.
+2020-12-09T15:07:50.932638Z 0 [System] [MY-010116] [Server] C:\Users\fishb\Desktop\goweb\GOWEB\mysql-8.0.22-winx64\bin\mysqld.exe (mysqld 8.0.22) starting as process 8772
+2020-12-09T15:07:50.944263Z 0 [Warning] [MY-013242] [Server] --character-set-server: 'utf8' is currently an alias for the character set UTF8MB3, but will be an alias for UTF8MB4 in a future release. Please consider using UTF8MB4 in order to be unambiguous.
+2020-12-09T15:07:50.981646Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2020-12-09T15:07:52.167486Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2020-12-09T15:07:52.338274Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
+2020-12-09T15:07:52.371450Z 0 [System] [MY-010229] [Server] Starting XA crash recovery...
+2020-12-09T15:07:52.377226Z 0 [System] [MY-010232] [Server] XA crash recovery finished.
+2020-12-09T15:07:52.458387Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2020-12-09T15:07:52.459886Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2020-12-09T15:07:52.512720Z 0 [System] [MY-010931] [Server] C:\Users\fishb\Desktop\goweb\GOWEB\mysql-8.0.22-winx64\bin\mysqld.exe: ready for connections. Version: '8.0.22'  socket: ''  port: 3306  MySQL Community Server - GPL.
+2020-12-09T15:10:18.854830Z 0 [System] [MY-010116] [Server] C:\Users\fishb\Desktop\goweb\GOWEB\mysql-8.0.22-winx64\bin\mysqld.exe (mysqld 8.0.22) starting as process 24496
+2020-12-09T15:10:18.856711Z 0 [Warning] [MY-013242] [Server] --character-set-server: 'utf8' is currently an alias for the character set UTF8MB3, but will be an alias for UTF8MB4 in a future release. Please consider using UTF8MB4 in order to be unambiguous.
+2020-12-09T15:10:18.877951Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2020-12-09T15:10:19.915244Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2020-12-09T15:10:20.077271Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
+2020-12-09T15:10:20.107266Z 0 [System] [MY-010229] [Server] Starting XA crash recovery...
+2020-12-09T15:10:20.114077Z 0 [System] [MY-010232] [Server] XA crash recovery finished.
+2020-12-09T15:10:20.175815Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2020-12-09T15:10:20.177220Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2020-12-09T15:10:20.219615Z 0 [System] [MY-010931] [Server] C:\Users\fishb\Desktop\goweb\GOWEB\mysql-8.0.22-winx64\bin\mysqld.exe: ready for connections. Version: '8.0.22'  socket: ''  port: 3306  MySQL Community Server - GPL.
+2020-12-09T15:10:41.987467Z 0 [System] [MY-010116] [Server] C:\Users\fishb\Desktop\goweb\GOWEB\mysql-8.0.22-winx64\bin\mysqld.exe (mysqld 8.0.22) starting as process 7448
+2020-12-09T15:10:41.989723Z 0 [Warning] [MY-013242] [Server] --character-set-server: 'utf8' is currently an alias for the character set UTF8MB3, but will be an alias for UTF8MB4 in a future release. Please consider using UTF8MB4 in order to be unambiguous.
+2020-12-09T15:10:42.016392Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2020-12-09T15:10:42.019808Z 1 [ERROR] [MY-012271] [InnoDB] The innodb_system data file 'ibdata1' must be writable
+2020-12-09T15:10:42.021436Z 1 [ERROR] [MY-012278] [InnoDB] The innodb_system data file 'ibdata1' must be writable
+2020-12-09T15:10:42.022862Z 1 [ERROR] [MY-010334] [Server] Failed to initialize DD Storage Engine
+2020-12-09T15:10:42.024248Z 0 [ERROR] [MY-010020] [Server] Data Dictionary initialization failed.
+2020-12-09T15:10:42.025486Z 0 [ERROR] [MY-010119] [Server] Aborting
+2020-12-09T15:10:42.026776Z 0 [System] [MY-010910] [Server] C:\Users\fishb\Desktop\goweb\GOWEB\mysql-8.0.22-winx64\bin\mysqld.exe: Shutdown complete (mysqld 8.0.22)  MySQL Community Server - GPL.
+2020-12-09T15:17:21.620805Z 0 [System] [MY-010116] [Server] C:\Users\fishb\Desktop\goweb\GOWEB\mysql-8.0.22-winx64\bin\mysqld.exe (mysqld 8.0.22) starting as process 21372
+2020-12-09T15:17:21.645078Z 0 [Warning] [MY-013242] [Server] --character-set-server: 'utf8' is currently an alias for the character set UTF8MB3, but will be an alias for UTF8MB4 in a future release. Please consider using UTF8MB4 in order to be unambiguous.
+2020-12-09T15:17:21.722908Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2020-12-09T15:17:22.936404Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2020-12-09T15:17:23.100642Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
+2020-12-09T15:17:23.130607Z 0 [System] [MY-010229] [Server] Starting XA crash recovery...
+2020-12-09T15:17:23.136222Z 0 [System] [MY-010232] [Server] XA crash recovery finished.
+2020-12-09T15:17:23.211256Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2020-12-09T15:17:23.212691Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2020-12-09T15:17:23.269823Z 0 [System] [MY-010931] [Server] C:\Users\fishb\Desktop\goweb\GOWEB\mysql-8.0.22-winx64\bin\mysqld.exe: ready for connections. Version: '8.0.22'  socket: ''  port: 3306  MySQL Community Server - GPL.
+2020-12-09T15:17:50.776461Z 0 [System] [MY-010116] [Server] C:\Users\fishb\Desktop\goweb\GOWEB\mysql-8.0.22-winx64\bin\mysqld.exe (mysqld 8.0.22) starting as process 2404
+2020-12-09T15:17:50.778310Z 0 [Warning] [MY-013242] [Server] --character-set-server: 'utf8' is currently an alias for the character set UTF8MB3, but will be an alias for UTF8MB4 in a future release. Please consider using UTF8MB4 in order to be unambiguous.
+2020-12-09T15:17:50.797892Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2020-12-09T15:17:51.719382Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2020-12-09T15:17:51.866905Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
+2020-12-09T15:17:51.888306Z 0 [System] [MY-010229] [Server] Starting XA crash recovery...
+2020-12-09T15:17:51.894788Z 0 [System] [MY-010232] [Server] XA crash recovery finished.
+2020-12-09T15:17:51.989437Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2020-12-09T15:17:51.990952Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2020-12-09T15:17:52.037479Z 0 [System] [MY-010931] [Server] C:\Users\fishb\Desktop\goweb\GOWEB\mysql-8.0.22-winx64\bin\mysqld.exe: ready for connections. Version: '8.0.22'  socket: ''  port: 3306  MySQL Community Server - GPL.
