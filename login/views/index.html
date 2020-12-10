@@ -4,6 +4,7 @@
 <html lang="en" class="no-js">
     <!-- Begin Head -->
     <head>
+        
         <!-- Basic -->
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -12,7 +13,7 @@
         <meta name="keywords" content="HTML5 Theme" />
         <meta name="description" content="Megakit - HTML5 Theme">
         <meta name="author" content="keenthemes.com">
-
+    
         <!-- Web Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i|Montserrat:400,700" rel="stylesheet">
 
@@ -30,8 +31,16 @@
         <!-- Favicon -->
         <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
         <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+        
     </head>
     <!-- End Head -->
+
+    <script type="text/javascript" language="javascript">
+        function move(){
+            location.replace('/auth/logout');
+        }
+    </script>
+  
 
     <!-- Body -->
     <body>
@@ -80,9 +89,8 @@
                                     <!-- End Pages -->
                                     <li class="s-header-v2__nav-item"><a href="/team" class="s-header-v2__nav-link">팀 소개</a></li>
                                     <li class="s-header-v2__nav-item"><a href="/faq" class="s-header-v2__nav-link">리뷰 작성</a></li>
-                                    
                                     <li class="s-header-v2__nav-item"><a href="/index_portfolio" class="s-header-v2__nav-link">모두의 리뷰</a></li>
-                                    <li class="s-header-v2__nav-item"><a href="/login" class="s-header-v2__nav-link">로그인</a></li>
+                                    <li class="s-header-v2__nav-item"><a onclick="move();" class="s-header-v2__nav-link">로그아웃</a></li>
                                 </ul>
                             </div>
                             <!-- End Nav Menu -->

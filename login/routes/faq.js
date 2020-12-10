@@ -52,8 +52,8 @@ router.use(session({
   var message = req.body.message;
   var hashtag = req.body.hashtag;
   var imagePath = req.file.path;
-  var likes = 0;
-  //이 부분에 로그인한 세션에서 아이디 가져올 수 있따면?
+  var likes = 1;
+ 
   var userID = req.session.username;
 
   console.log(title,address,message,hashtag,imagePath,likes,userID);

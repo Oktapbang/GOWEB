@@ -13,7 +13,7 @@
 
 
         <style>
-            #my_modal {
+            #my_modal{
                 width: 1200px;
                 height: 700px;
             }
@@ -51,6 +51,12 @@
         <!-- Favicon -->
         <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
         <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var el = document.getElementById('my_modal');
+                el.style.display = "none";
+            }, false);
+        </script>
     </head>
     <!-- End Head -->
 
@@ -95,11 +101,10 @@
                     <div class="container-fluid">
                         <!-- Menu List -->                                
                         <ul class="list-unstyled s-header__nav-menu">
-                            <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="index_clinic.html">Main</a></li>
-                            <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="team.html">팀 소개</a></li>
-                            <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="faq.html">브랜드 소개</a></li>
-                            <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="about.html">이벤트 소개</a></li>
-                            <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="index_portfolio.html">리뷰</a></li>
+                            <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="/">Main</a></li>
+                            <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="/team">팀 소개</a></li>
+                            <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="/faq">리뷰 작성</a></li>
+                            <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="/index_portfolio">모두의 리뷰</a></li>
                         </ul>
                         <!-- End Menu List -->
                     </div>
@@ -163,14 +168,14 @@
                                 <img src="img/upload/05.jpg" alt="" class="img-fluid">
                             </div><!-- end media -->
                             <div class="portfolio-details"> 
-                                <h4><%=title%>></h4> <!--style.css  .portfolio-details h4-->
+                                <h4><%=t1%></h4> <!--style.css  .portfolio-details h4-->
                             </div><!-- end details -->
                             <div class="portfolio-meta clearfix">
                                 <div class="float-left">
-                                    <mark>#화실카페</mark>
+                                    <mark><%=h1%></mark>
                                 </div>
                                 <div class="float-right">
-                                    <a href="#"><i class="fa fa-heart-o"></i> 124</a>
+                                    <a href="#"><i class="fa fa-heart-o"></i> <%=l1%></a>
                                     <!-- filled heart = fa fa-heart (font-awesom.min.css)-->
                                 </div>
 
@@ -191,15 +196,15 @@
                                 <img src="img/upload/06.jpg" alt="" class="img-fluid">
                             </div><!-- end media -->
                             <div class="portfolio-details"> 
-                                <h4>홍대 24'7</h4>
+                                <h4><%=t2%></h4>
                             </div><!-- end details -->
                         
                             <div class="portfolio-meta clearfix">
                                 <div class="float-left">
-                                    <mark>#핑크핑크</mark>
+                                    <mark><%=h2%></mark>
                                 </div>
                                 <div class="float-right">
-                                    <a href="#"><i class="fa fa-heart-o"></i>468</a>
+                                    <a href="#"><i class="fa fa-heart-o"></i> <%=l2%></a>
                                     <!-- filled heart = fa fa-heart (font-awesom.min.css)-->
                                 </div>
 
@@ -217,15 +222,15 @@
                                 <img src="img/upload/10.jpg" alt="" class="img-fluid">
                             </div><!-- end media -->
                             <div class="portfolio-details"> 
-                                <h4>공릉 카페 '은하수'</h4>
+                                <h4><%=t3%></h4>
                             </div><!-- end details -->
                         
                             <div class="portfolio-meta clearfix">
                                 <div class="float-left">
-                                    <mark>#수다떨기좋은</mark>
+                                    <mark><%=h3%></mark>
                                 </div>
                                 <div class="float-right">
-                                    <a href="#"><i class="fa fa-heart-o"></i> 975</a>
+                                    <a href="#"><i class="fa fa-heart-o"></i> <%=l3%></a>
                                     <!-- filled heart = fa fa-heart (font-awesom.min.css)-->
                                 </div>
 
@@ -244,15 +249,15 @@
                                 <img src="img/upload/07.jpg" alt="" class="img-fluid">
                             </div><!-- end media -->
                             <div class="portfolio-details"> 
-                                <h4>수유 '노르웨이안 우드'</h4>
+                                <h4><%=t4%></h4>
                             </div><!-- end details -->
                         
                             <div class="portfolio-meta clearfix">
                                 <div class="float-left">
-                                    <mark>#스콘맛집</mark>
+                                    <mark><%=h4%></mark>
                                 </div>
                                 <div class="float-right">
-                                    <a href="#"><i class="fa fa-heart-o"></i> 217</a>
+                                    <a href="#"><i class="fa fa-heart-o"></i> <%=l4%></a>
                                     <!-- filled heart = fa fa-heart (font-awesom.min.css)-->
                                 </div>
 
@@ -271,15 +276,15 @@
                                 <img src="img/upload/09.jpg" alt="" class="img-fluid">
                             </div><!-- end media -->
                             <div class="portfolio-details"> 
-                                <h4>미아 카페 '다락방'</h4>
+                                <h4><%=t5%></h4>
                             </div><!-- end details -->
                         
                             <div class="portfolio-meta clearfix">
                                 <div class="float-left">
-                                    <mark>#공부하기좋은</mark>
+                                    <mark><%=h5%></mark>
                                 </div>
                                 <div class="float-right">
-                                    <a href="#"><i class="fa fa-heart-o"></i> 158</a>
+                                    <a href="#"><i class="fa fa-heart-o"></i> <%=l5%></a>
                                     <!-- filled heart = fa fa-heart (font-awesom.min.css)-->
                                 </div>
 
@@ -299,15 +304,15 @@
                                 <img src="img/upload/11.jpg" alt="" class="img-fluid">
                             </div><!-- end media -->
                             <div class="portfolio-details"> 
-                                <h4>여수 오션뷰 카페 '낭만'</h4>
+                                <h4><%=t6%></h4>
                             </div><!-- end details -->
                         
                             <div class="portfolio-meta clearfix">
                                 <div class="float-left">
-                                    <mark>#사진찍기좋은</mark>
+                                    <mark><%=h6%></mark>
                                 </div>
                                 <div class="float-right">
-                                    <a href="#"><i class="fa fa-heart-o"></i> 975</a>
+                                    <a href="#"><i class="fa fa-heart-o"></i> <%=l6%></a>
                                     <!-- filled heart = fa fa-heart (font-awesom.min.css)-->
                                 </div>
 
@@ -611,6 +616,7 @@
         <!--========== END PAGE CONTENT ==========-->
 
         <!--========== POPUP ==========-->
+        
 
         <div id="my_modal">
             <a class="modal_close_btn">
@@ -656,12 +662,12 @@
                        <table>
                         <tr style="height: 50px; padding-top:10px">
                             <td colspan='5' style="font-size: 27px; color:#5D5D5D; font-weight: bold;  vertical-align:middle;">
-                                공릉하나카페
+                                <%=title%>
                             </td>
                         </tr>
                         <tr style="height: 20px; vertical-align: bottom; ">
                             <td>
-                                @hana_two3
+                                <%=userID%>
                             </td>
                             <td  style=" padding-right: 10px;"> | </td>
 
@@ -670,17 +676,17 @@
                             </td>
                             <td  style="padding-left:10px; padding-right: 10px;"> | </td>
                             <td>
-                                서울_대한민국
+                                <%=address%>
                             </td>
                         </tr>
                         <tr  style="height: 180px; vertical-align: top;">
                             <td colspan='5'style="padding-top:30px; color:#5D5D5D; font-size: 18px; line-height:100%; ">
-                                콘센트가 많아서 공부하기 좋아요! <p> </p>인스타용 사진찍기도 좋습니다.
+                                <%=message%>
                             </td>
                         </tr>
                         <tr style="height: 20px">
                             <td colspan='5' style="color: #F2AE8B;">
-                                #서울 #공릉 #철길 #공부하기좋은 #인스타갬성
+                                <%=hashtag%>
                             </td>
                         </tr>
                        </table>
@@ -763,7 +769,7 @@
                                         </table>
                         <hr width="100%"> <!--구분선-->
                         <div class="float-left" style="font-size: 32px; color:#5D5D5D; padding-left:30px;">
-                            <a href="#"><i class="fa fa-heart-o"></i> 25</a>
+                            <a href="#"><i class="fa fa-heart-o"></i><%=likes%></a>
                             <!-- filled heart = fa fa-heart (font-awesom.min.css)-->
                         </div>
 
@@ -791,7 +797,7 @@
                     width: '100%',
                     height: '100%',
                     overflow: 'auto',
-                    backgroundColor: 'rgba(0,0,0,0.4)'
+                    backgroundColor: 'rgba(0,0,0,0.4)',
                 });
                 document.body.append(bg);
 

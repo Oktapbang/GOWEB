@@ -81,6 +81,20 @@ app.post('/login', function(request, response) {
 	}
 });
 
+app.get('/auth/logout',(req, res) => {
+	req.session.destroy(
+		function (err) {
+			if (err) {
+				console.log('세션 삭제시 에러');
+				return;
+			}
+			res.redirect('/login');
+			res.end();
+		}
+	); 
+});
+
+
 app.get('/register', function(request, response) {
 	response.sendFile(path.join(__dirname + '/views/register.html'));
 });
@@ -164,6 +178,7 @@ app.use('/about', aboutRouter);
 app.use('/faq', faqRouter);
 app.use('/login', loginRouter);
 app.use('/index_portfolio', index_portfolioRouter);
+
 
 
 
