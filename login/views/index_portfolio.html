@@ -165,7 +165,7 @@
                     <div class="owl-work-item">
                         <div class="portfolio-ver-01">
                             <div class="media-element">
-                                <img src="img/upload/05.jpg" alt="" class="img-fluid">
+                                <img src=<%=i1%> alt="" class="img-fluid">
                             </div><!-- end media -->
                             <div class="portfolio-details"> 
                                 <h4><%=t1%></h4> <!--style.css  .portfolio-details h4-->
@@ -193,7 +193,7 @@
                     <div class="owl-work-item">
                         <div class="portfolio-ver-01">
                             <div class="media-element">
-                                <img src="img/upload/06.jpg" alt="" class="img-fluid">
+                                <img src=<%=i2%> alt="" class="img-fluid">
                             </div><!-- end media -->
                             <div class="portfolio-details"> 
                                 <h4><%=t2%></h4>
@@ -219,7 +219,7 @@
                     <div class="owl-work-item">
                         <div class="portfolio-ver-01">
                             <div class="media-element">
-                                <img src="img/upload/10.jpg" alt="" class="img-fluid">
+                                <img src=<%=i3%> alt="" class="img-fluid">
                             </div><!-- end media -->
                             <div class="portfolio-details"> 
                                 <h4><%=t3%></h4>
@@ -246,7 +246,7 @@
                     <div class="owl-work-item">
                         <div class="portfolio-ver-01">
                             <div class="media-element">
-                                <img src="img/upload/07.jpg" alt="" class="img-fluid">
+                                <img src=<%=i4%> alt="" class="img-fluid">
                             </div><!-- end media -->
                             <div class="portfolio-details"> 
                                 <h4><%=t4%></h4>
@@ -273,7 +273,7 @@
                     <div class="owl-work-item">
                         <div class="portfolio-ver-01">
                             <div class="media-element">
-                                <img src="img/upload/09.jpg" alt="" class="img-fluid">
+                                <img src=<%=i5%> alt="" class="img-fluid">
                             </div><!-- end media -->
                             <div class="portfolio-details"> 
                                 <h4><%=t5%></h4>
@@ -301,7 +301,7 @@
                     <div class="owl-work-item">
                         <div class="portfolio-ver-01">
                             <div class="media-element">
-                                <img src="img/upload/11.jpg" alt="" class="img-fluid">
+                                <img src=<%=i6%> alt="" class="img-fluid">
                             </div><!-- end media -->
                             <div class="portfolio-details"> 
                                 <h4><%=t6%></h4>
@@ -348,48 +348,40 @@
                 <!-- Item -->
                 <div class="s-portfolio__item cbp-item logos motion">
                     <div class="s-portfolio__img-effect">
-                        <img src="img/400x500/04.jpg" alt="Portfolio Image">
+                        <img src=<%=i2%> alt="Portfolio Image">
                     </div>
                     <div class="s-portfolio__caption-hover--cc">
                         <div class="g-margin-b-25--xs">
-                            <h2 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Portfolio Item</h2>
-                            <p class="g-color--white-opacity">by KeenThemes Inc.</p>
+                            <h2 class="g-font-size-18--xs g-color--white g-margin-b-5--xs"><%=t1%></h2>
+                            <p class="g-color--white-opacity"><%=h1%></p>
                         </div>
                         <ul class="list-inline g-ul-li-lr-5--xs g-margin-b-0--xs">
                             <li>
-                                <button id="popup_open_btn" class="cbp-lightbox s-icon s-icon--sm s-icon--white-bg g-radius--circle">
+                                <button onclick="modal('my_modal');" class="cbp-lightbox s-icon s-icon--sm s-icon--white-bg g-radius--circle">
                                     <i class="ti-fullscreen"></i>
                                 </button>
                             </li>
-                            <li>
-                                <a href="http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes" class="s-icon s-icon--sm s-icon s-icon--white-bg g-radius--circle">
-                                    <i class="ti-link"></i>
-                                </a>
-                            </li>
+                           
                         </ul>
                     </div>
                 </div>
                 <!-- Item -->
                 <div class="s-portfolio__item cbp-item graphic">
                     <div class="s-portfolio__img-effect">
-                        <img src="img/970x647/09.jpg" alt="Portfolio Image">
+                        <img src=<%=i2%> alt="Portfolio Image">
                     </div>
                     <div class="s-portfolio__caption-hover--cc">
                         <div class="g-margin-b-25--xs">
-                            <h3 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Portfolio Item</h3>
-                            <p class="g-color--white-opacity">by KeenThemes Inc.</p>
+                            <h2 class="g-font-size-18--xs g-color--white g-margin-b-5--xs"><%=t2%></h2>
+                            <p class="g-color--white-opacity"><%=h2%></p>
                         </div>
                         <ul class="list-inline g-ul-li-lr-5--xs g-margin-b-0--xs">
                             <li>
-                                <a href="img/970x647/09.jpg" class="cbp-lightbox s-icon s-icon--sm s-icon--white-bg g-radius--circle" data-title="Portfolio Item <br/> by KeenThemes Inc.">
+                                <button onclick="modal('my_modal');" class="cbp-lightbox s-icon s-icon--sm s-icon--white-bg g-radius--circle">
                                     <i class="ti-fullscreen"></i>
-                                </a>
+                                </button>
                             </li>
-                            <li>
-                                <a href="http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes" class="s-icon s-icon--sm s-icon s-icon--white-bg g-radius--circle">
-                                    <i class="ti-link"></i>
-                                </a>
-                            </li>
+                           
                         </ul>
                     </div>
                 </div>
@@ -405,14 +397,11 @@
                         </div>
                         <ul class="list-inline g-ul-li-lr-5--xs g-margin-b-0--xs">
                             <li>
-                                <a href="/review_test" onclick="window.open(this.href, _blank, width='120px',height='600px',toolbars=no,scrollbars=no); return false;" class="cbp-lightbox s-icon s-icon--sm s-icon--white-bg g-radius--circle"></a>
-                                <i class="ti-fullscreen"></i>
+                                <button onclick="modal('my_modal');" class="cbp-lightbox s-icon s-icon--sm s-icon--white-bg g-radius--circle">
+                                    <i class="ti-fullscreen"></i>
+                                </button>
                             </li>
-                            <li>
-                                <a href="http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes" class="s-icon s-icon--sm s-icon s-icon--white-bg g-radius--circle">
-                                    <i class="ti-link"></i>
-                                </a>
-                            </li>
+                           
                         </ul>
                     </div>
                 </div>
@@ -428,15 +417,11 @@
                         </div>
                         <ul class="list-inline g-ul-li-lr-5--xs g-margin-b-0--xs">
                             <li>
-                                <a href="img/400x550/11.jpg" class="cbp-lightbox s-icon s-icon--sm s-icon--white-bg g-radius--circle" data-title="Portfolio Item <br/> by KeenThemes Inc.">
+                                <button onclick="modal('my_modal');" class="cbp-lightbox s-icon s-icon--sm s-icon--white-bg g-radius--circle">
                                     <i class="ti-fullscreen"></i>
-                                </a>
+                                </button>
                             </li>
-                            <li>
-                                <a href="http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes" class="s-icon s-icon--sm s-icon s-icon--white-bg g-radius--circle">
-                                    <i class="ti-link"></i>
-                                </a>
-                            </li>
+                           
                         </ul>
                     </div>
                 </div>
@@ -452,15 +437,11 @@
                         </div>
                         <ul class="list-inline g-ul-li-lr-5--xs g-margin-b-0--xs">
                             <li>
-                                <a href="img/970x647/07.jpg" class="cbp-lightbox s-icon s-icon--sm s-icon--white-bg g-radius--circle" data-title="Portfolio Item <br/> by KeenThemes Inc.">
+                                <button onclick="modal('my_modal');" class="cbp-lightbox s-icon s-icon--sm s-icon--white-bg g-radius--circle">
                                     <i class="ti-fullscreen"></i>
-                                </a>
+                                </button>
                             </li>
-                            <li>
-                                <a href="http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes" class="s-icon s-icon--sm s-icon s-icon--white-bg g-radius--circle">
-                                    <i class="ti-link"></i>
-                                </a>
-                            </li>
+                           
                         </ul>
                     </div>
                 </div>
@@ -476,15 +457,11 @@
                         </div>
                         <ul class="list-inline g-ul-li-lr-5--xs g-margin-b-0--xs">
                             <li>
-                                <a href="img/970x647/01.jpg" class="cbp-lightbox s-icon s-icon--sm s-icon--white-bg g-radius--circle" data-title="Portfolio Item <br/> by KeenThemes Inc.">
+                                <button onclick="modal('my_modal');" class="cbp-lightbox s-icon s-icon--sm s-icon--white-bg g-radius--circle">
                                     <i class="ti-fullscreen"></i>
-                                </a>
+                                </button>
                             </li>
-                            <li>
-                                <a href="http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes" class="s-icon s-icon--sm s-icon s-icon--white-bg g-radius--circle">
-                                    <i class="ti-link"></i>
-                                </a>
-                            </li>
+                           
                         </ul>
                     </div>
                 </div>
@@ -500,15 +477,11 @@
                         </div>
                         <ul class="list-inline g-ul-li-lr-5--xs g-margin-b-0--xs">
                             <li>
-                                <a href="img/400x500/03.jpg" class="cbp-lightbox s-icon s-icon--sm s-icon--white-bg g-radius--circle" data-title="Portfolio Item <br/> by KeenThemes Inc.">
+                                <button onclick="modal('my_modal');" class="cbp-lightbox s-icon s-icon--sm s-icon--white-bg g-radius--circle">
                                     <i class="ti-fullscreen"></i>
-                                </a>
+                                </button>
                             </li>
-                            <li>
-                                <a href="http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes" class="s-icon s-icon--sm s-icon s-icon--white-bg g-radius--circle">
-                                    <i class="ti-link"></i>
-                                </a>
-                            </li>
+                           
                         </ul>
                     </div>
                 </div>
@@ -524,15 +497,11 @@
                         </div>
                         <ul class="list-inline g-ul-li-lr-5--xs g-margin-b-0--xs">
                             <li>
-                                <a href="img/400x500/01.jpg" class="cbp-lightbox s-icon s-icon--sm s-icon--white-bg g-radius--circle" data-title="Portfolio Item <br/> by KeenThemes Inc.">
+                                <button onclick="modal('my_modal');" class="cbp-lightbox s-icon s-icon--sm s-icon--white-bg g-radius--circle">
                                     <i class="ti-fullscreen"></i>
-                                </a>
+                                </button>
                             </li>
-                            <li>
-                                <a href="http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes" class="s-icon s-icon--sm s-icon s-icon--white-bg g-radius--circle">
-                                    <i class="ti-link"></i>
-                                </a>
-                            </li>
+                           
                         </ul>
                     </div>
                 </div>
@@ -548,15 +517,11 @@
                         </div>
                         <ul class="list-inline g-ul-li-lr-5--xs g-margin-b-0--xs">
                             <li>
-                                <a href="img/970x647/05.jpg" class="cbp-lightbox s-icon s-icon--sm s-icon--white-bg g-radius--circle" data-title="Portfolio Item <br/> by KeenThemes Inc.">
+                                <button onclick="modal('my_modal');" class="cbp-lightbox s-icon s-icon--sm s-icon--white-bg g-radius--circle">
                                     <i class="ti-fullscreen"></i>
-                                </a>
+                                </button>
                             </li>
-                            <li>
-                                <a href="http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes" class="s-icon s-icon--sm s-icon s-icon--white-bg g-radius--circle">
-                                    <i class="ti-link"></i>
-                                </a>
-                            </li>
+                           
                         </ul>
                     </div>
                 </div>
@@ -572,15 +537,11 @@
                         </div>
                         <ul class="list-inline g-ul-li-lr-5--xs g-margin-b-0--xs">
                             <li>
-                                <a href="img/970x647/06.jpg" class="cbp-lightbox s-icon s-icon--sm s-icon--white-bg g-radius--circle" data-title="Portfolio Item <br/> by KeenThemes Inc.">
+                                <button onclick="modal('my_modal');" class="cbp-lightbox s-icon s-icon--sm s-icon--white-bg g-radius--circle">
                                     <i class="ti-fullscreen"></i>
-                                </a>
+                                </button>
                             </li>
-                            <li>
-                                <a href="http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes" class="s-icon s-icon--sm s-icon s-icon--white-bg g-radius--circle">
-                                    <i class="ti-link"></i>
-                                </a>
-                            </li>
+                           
                         </ul>
                     </div>
                 </div>
@@ -603,7 +564,7 @@
                     <p style="color:#57504d; font-size: 18px; ">취미부터 실무까지!
                     <br> 원데이 클래스와 함께 하세요.  </p>
                     
-                    <p style="color:#f2ae8b; font-weight: bold;  font-size: 18px; margin-top: 100px;"> <a href="/guest.html"> 원데이 클래스 신청하기> </a> </p>
+                    <p style="color:#f2ae8b; font-weight: bold;  font-size: 18px; margin-top: 100px;"> <a href="/guest"> 원데이 클래스 신청하기> </a> </p>
                 </td>
                 <td>
                     <img src="img/upload/12.jpg" style="block-size: 250px; float: right; border-radius: 15px; margin-top: 65px; margin-left: 30px;">
@@ -829,6 +790,8 @@
             document.getElementById('popup_open_btn').addEventListener('click', function() {
                 modal('my_modal');
             });
+       
+    </script>
         </script>
 
 
@@ -850,15 +813,15 @@
                     <div class="row">
                         <div class="col-sm-2 g-margin-b-20--xs g-margin-b-0--md">
                             <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-0--xs">
-                                <li><a class="g-font-size-15--xs g-color--white-opacity" href="/guest.html">About</a></li>
-                                <li><a class="g-font-size-15--xs g-color--white-opacity" href="/guest.html">Work</a></li>
-                                <li><a class="g-font-size-15--xs g-color--white-opacity" href="/guest.html">Contact</a></li>
+                                <li><a class="g-font-size-15--xs g-color--white-opacity" href="/guest">About</a></li>
+                                <li><a class="g-font-size-15--xs g-color--white-opacity" href="/guest">Work</a></li>
+                                <li><a class="g-font-size-15--xs g-color--white-opacity" href="/guest">Contact</a></li>
                             </ul>
                         </div>
                         <div class="col-sm-2 g-margin-b-20--xs g-margin-b-0--md">
                             <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-0--xs">
-                                <li><a class="g-font-size-15--xs g-color--white-opacity" href="/guest.html">Facebook</a></li>
-                                <li><a class="g-font-size-15--xs g-color--white-opacity" href="/guest.html">Instagram</a></li>
+                                <li><a class="g-font-size-15--xs g-color--white-opacity" href="/guest">Facebook</a></li>
+                                <li><a class="g-font-size-15--xs g-color--white-opacity" href="/guest">Instagram</a></li>
                             </ul>
                         </div>
                         <div class="col-sm-2 g-margin-b-40--xs g-margin-b-0--md">

@@ -29,6 +29,7 @@ app.use(session({
 	})
 }));
 
+app.use('/uploads', express.static('./uploads'));
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({extended : true}));
 app.use(bodyParser.json());
@@ -43,7 +44,7 @@ function restrict(req, res, next) {
 }
 
 app.use('/', function(request, response, next) {
-	if ( request.session.loggedin == true || request.url == "/login" || request.url == "/register" ) {
+	if ( request.session.loggedin == true || request.url == "/login" || request.url == "/register" || request.url =="/guest" || request.url =="/guest/submit") {
     next();
 	}
 	else {
@@ -154,10 +155,10 @@ app.get('/test2', function(request, response) {
 
 var indexRouter = require('./routes/index');
 var teamRouter = require('./routes/team');
-var aboutRouter = require('./routes/about');
 var faqRouter = require('./routes/faq');
 var loginRouter = require('./routes/login');
 var index_portfolioRouter = require('./routes/index_portfolio');
+var guestRouter = require('./routes/guest')
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -174,10 +175,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/team', teamRouter);
-app.use('/about', aboutRouter);
+
 app.use('/faq', faqRouter);
 app.use('/login', loginRouter);
 app.use('/index_portfolio', index_portfolioRouter);
+app.use('/guest',guestRouter);
 
 
 

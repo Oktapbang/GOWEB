@@ -28,9 +28,12 @@ router.get('/', function(req, res, next) {
     //   x=('t'+i);
     //   y=('h'+i);
     //   z=('l'+i);
-    //   x = rows[i].title;
-    //   y = rows[i].hashtag;
-    //   z = rows[i].likes;
+    //   t1 = rows[i].title;
+    //   a1 = rows[i].address;
+    //   m1 = rows[i].message;
+    //   h1 = rows[i].hashtag;
+    //   l1 = rows[i].likes;
+    //   u1 = rows[i].userID;
     // }
 
     t1 = rows[0].title;
