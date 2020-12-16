@@ -15,13 +15,14 @@
         <style>
             #my_modal{
                 width: 1200px;
-                height: 700px;
+                height: 600px;
             }
 
             #my_modal .modal_close_btn {
                 position: absolute;
                 top: 10px;
                 right: 13px;
+                left: 50px;
             }
         </style>
 
@@ -53,8 +54,31 @@
         <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
         <script>
             document.addEventListener('DOMContentLoaded', function() {
-                var el = document.getElementById('my_modal');
+                var el = document.getElementById('my_modal1');
                 el.style.display = "none";
+                var el = document.getElementById('my_modal2');
+                el.style.display = "none";
+                var el = document.getElementById('my_modal3');
+                el.style.display = "none";
+                var el = document.getElementById('my_modal4');
+                el.style.display = "none";
+                var el = document.getElementById('my_modal5');
+                el.style.display = "none";
+                var el = document.getElementById('my_modal6');
+                el.style.display = "none";
+                var el = document.getElementById('my_modal7');
+                el.style.display = "none";
+                var el = document.getElementById('my_modal8');
+                el.style.display = "none";
+                var el = document.getElementById('my_modal9');
+                el.style.display = "none";
+                var el = document.getElementById('my_modal10');
+                el.style.display = "none";
+                if (self.name != 'reload') {
+                    self.name = 'reload';
+                    self.location.reload(true);
+                }
+                else self.name = ''; 
             }, false);
         </script>
     </head>
@@ -175,12 +199,15 @@
                                     <mark><%=h1%></mark>
                                 </div>
                                 <div class="float-right">
-                                    <a href="#"><i class="fa fa-heart-o"></i> <%=l1%></a>
+                                    <form action ="likesup">
+                                    <i class="fa fa-heart-o"></i> <%=l1%></a>
+                                     
                                     <!-- filled heart = fa fa-heart (font-awesom.min.css)-->
+                                    </form>
                                 </div>
 
                                 <div class="float-right" style="margin-right: 10px;">
-                                    <a href="#"><i class="fa fa-film"></i> 0.2k </a>
+                                    <i class="fa fa-film"></i> <%=v1%> </a>
                                     <!-- eye = fa fa-eye_open (font-awesom.min.css)-->
                                 </div>
                             </div><!-- end meta -->
@@ -204,12 +231,12 @@
                                     <mark><%=h2%></mark>
                                 </div>
                                 <div class="float-right">
-                                    <a href="#"><i class="fa fa-heart-o"></i> <%=l2%></a>
+                                    <i class="fa fa-heart-o"></i> <%=l2%></a>
                                     <!-- filled heart = fa fa-heart (font-awesom.min.css)-->
                                 </div>
 
                                 <div class="float-right" style="margin-right: 10px;">
-                                    <a href="#"><i class="fa fa-film"></i> 0.5k </a>
+                                    <i class="fa fa-film"></i> <%=v2%> </a>
                                     <!-- eye = fa fa-eye_open (font-awesom.min.css)-->
                                 </div>
                             </div><!-- end meta -->
@@ -230,12 +257,12 @@
                                     <mark><%=h3%></mark>
                                 </div>
                                 <div class="float-right">
-                                    <a href="#"><i class="fa fa-heart-o"></i> <%=l3%></a>
+                                   <i class="fa fa-heart-o"></i> <%=l3%></a>
                                     <!-- filled heart = fa fa-heart (font-awesom.min.css)-->
                                 </div>
 
                                 <div class="float-right" style="margin-right: 10px;">
-                                    <a href="#"><i class="fa fa-film"></i> 1.2k </a>
+                                    <i class="fa fa-film"></i> <%=v3%> </a>
                                     <!-- eye = fa fa-eye_open (font-awesom.min.css)-->
                                 </div>
                             </div><!-- end meta -->
@@ -257,12 +284,12 @@
                                     <mark><%=h4%></mark>
                                 </div>
                                 <div class="float-right">
-                                    <a href="#"><i class="fa fa-heart-o"></i> <%=l4%></a>
+                                    <i class="fa fa-heart-o"></i> <%=l4%></a>
                                     <!-- filled heart = fa fa-heart (font-awesom.min.css)-->
                                 </div>
 
                                 <div class="float-right" style="margin-right: 10px;">
-                                    <a href="#"><i class="fa fa-film"></i> 0.4k </a>
+                                    <i class="fa fa-film"></i> <%=v4%> </a>
                                     <!-- eye = fa fa-eye_open (font-awesom.min.css)-->
                                 </div>
                             </div><!-- end meta -->
@@ -284,12 +311,12 @@
                                     <mark><%=h5%></mark>
                                 </div>
                                 <div class="float-right">
-                                    <a href="#"><i class="fa fa-heart-o"></i> <%=l5%></a>
+                                    <i class="fa fa-heart-o"></i> <%=l5%></a>
                                     <!-- filled heart = fa fa-heart (font-awesom.min.css)-->
                                 </div>
 
                                 <div class="float-right" style="margin-right: 10px;">
-                                    <a href="#"><i class="fa fa-film"></i> 0.3k </a>
+                                    <i class="fa fa-film"></i> <%=v5%> </a>
                                     <!-- eye = fa fa-eye_open (font-awesom.min.css)-->
                                 </div>
                             </div><!-- end meta -->
@@ -312,12 +339,12 @@
                                     <mark><%=h6%></mark>
                                 </div>
                                 <div class="float-right">
-                                    <a href="#"><i class="fa fa-heart-o"></i> <%=l6%></a>
+                                    <i class="fa fa-heart-o"></i> <%=l6%></a>
                                     <!-- filled heart = fa fa-heart (font-awesom.min.css)-->
                                 </div>
 
                                 <div class="float-right" style="margin-right: 10px;">
-                                    <a href="#"><i class="fa fa-film"></i> 1.2k </a>
+                                    <i class="fa fa-film"></i> <%=v6%> </a>
                                     <!-- eye = fa fa-eye_open (font-awesom.min.css)-->
                                 </div>
                             </div><!-- end meta -->
@@ -346,18 +373,40 @@
             <div id="js__grid-portfolio-gallery" class="cbp">
                 <!--item hover color : .s-portfolio__img-effect:after     on style.css-->
                 <!-- Item -->
+                
                 <div class="s-portfolio__item cbp-item logos motion">
                     <div class="s-portfolio__img-effect">
-                        <img src=<%=i2%> alt="Portfolio Image">
+                        <img src=<%=ri1%> alt="Portfolio Image">
                     </div>
                     <div class="s-portfolio__caption-hover--cc">
                         <div class="g-margin-b-25--xs">
-                            <h2 class="g-font-size-18--xs g-color--white g-margin-b-5--xs"><%=t1%></h2>
-                            <p class="g-color--white-opacity"><%=h1%></p>
+                            <h2 class="g-font-size-18--xs g-color--white g-margin-b-5--xs"><%=rt1%></h2>
+                            <p class="g-color--white-opacity"><%=rh1%></p>
                         </div>
                         <ul class="list-inline g-ul-li-lr-5--xs g-margin-b-0--xs">
                             <li>
-                                <button onclick="modal('my_modal');" class="cbp-lightbox s-icon s-icon--sm s-icon--white-bg g-radius--circle">
+                                <button onclick="modal('my_modal1'); viewup('rt1','rv1');" class="cbp-lightbox s-icon s-icon--sm s-icon--white-bg g-radius--circle">
+                                    <i class="ti-fullscreen"></i>
+                                </button>
+                            </li>
+                           
+                        </ul>
+                    </div>
+                </div>
+            
+                <!-- Item -->
+                <div class="s-portfolio__item cbp-item graphic">
+                    <div class="s-portfolio__img-effect">
+                        <img src=<%=ri2%> alt="Portfolio Image">
+                    </div>
+                    <div class="s-portfolio__caption-hover--cc">
+                        <div class="g-margin-b-25--xs">
+                            <h2 class="g-font-size-18--xs g-color--white g-margin-b-5--xs"><%=rt2%></h2>
+                            <p class="g-color--white-opacity"><%=rh2%></p>
+                        </div>
+                        <ul class="list-inline g-ul-li-lr-5--xs g-margin-b-0--xs">
+                            <li>
+                                <button onclick="modal('my_modal2');viewup('rt2','rv2');" class="cbp-lightbox s-icon s-icon--sm s-icon--white-bg g-radius--circle">
                                     <i class="ti-fullscreen"></i>
                                 </button>
                             </li>
@@ -368,16 +417,16 @@
                 <!-- Item -->
                 <div class="s-portfolio__item cbp-item graphic">
                     <div class="s-portfolio__img-effect">
-                        <img src=<%=i2%> alt="Portfolio Image">
+                        <img src=<%=ri3%> alt="Portfolio Image">
                     </div>
                     <div class="s-portfolio__caption-hover--cc">
                         <div class="g-margin-b-25--xs">
-                            <h2 class="g-font-size-18--xs g-color--white g-margin-b-5--xs"><%=t2%></h2>
-                            <p class="g-color--white-opacity"><%=h2%></p>
+                            <h2 class="g-font-size-18--xs g-color--white g-margin-b-5--xs"><%=rt3%></h2>
+                            <p class="g-color--white-opacity"><%=rh3%></p>
                         </div>
                         <ul class="list-inline g-ul-li-lr-5--xs g-margin-b-0--xs">
                             <li>
-                                <button onclick="modal('my_modal');" class="cbp-lightbox s-icon s-icon--sm s-icon--white-bg g-radius--circle">
+                                <button onclick="modal('my_modal3');viewup('rt3','rv3');" class="cbp-lightbox s-icon s-icon--sm s-icon--white-bg g-radius--circle">
                                     <i class="ti-fullscreen"></i>
                                 </button>
                             </li>
@@ -386,18 +435,18 @@
                     </div>
                 </div>
                 <!-- Item -->
-                <div class="s-portfolio__item cbp-item logos">
+                <div class="s-portfolio__item cbp-item graphic">
                     <div class="s-portfolio__img-effect">
-                        <img src="img/400x500/02.jpg" alt="Portfolio Image">
+                        <img src=<%=ri4%> alt="Portfolio Image">
                     </div>
                     <div class="s-portfolio__caption-hover--cc">
                         <div class="g-margin-b-25--xs">
-                            <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">popup test</h4>
-                            <p class="g-color--white-opacity">test</p>
+                            <h2 class="g-font-size-18--xs g-color--white g-margin-b-5--xs"><%=rt4%></h2>
+                            <p class="g-color--white-opacity"><%=rh4%></p>
                         </div>
                         <ul class="list-inline g-ul-li-lr-5--xs g-margin-b-0--xs">
                             <li>
-                                <button onclick="modal('my_modal');" class="cbp-lightbox s-icon s-icon--sm s-icon--white-bg g-radius--circle">
+                                <button onclick="modal('my_modal4');viewup('rt4','rv4');" class="cbp-lightbox s-icon s-icon--sm s-icon--white-bg g-radius--circle">
                                     <i class="ti-fullscreen"></i>
                                 </button>
                             </li>
@@ -405,19 +454,19 @@
                         </ul>
                     </div>
                 </div>
-                <!-- Item -->
-                <div class="s-portfolio__item cbp-item motion graphic">
+                 <!-- Item -->
+                 <div class="s-portfolio__item cbp-item graphic">
                     <div class="s-portfolio__img-effect">
-                        <img src="img/400x550/11.jpg" alt="Portfolio Image">
+                        <img src=<%=ri5%> alt="Portfolio Image">
                     </div>
                     <div class="s-portfolio__caption-hover--cc">
                         <div class="g-margin-b-25--xs">
-                            <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Portfolio Item</h4>
-                            <p class="g-color--white-opacity">by KeenThemes Inc.</p>
+                            <h2 class="g-font-size-18--xs g-color--white g-margin-b-5--xs"><%=rt5%></h2>
+                            <p class="g-color--white-opacity"><%=rh5%></p>
                         </div>
                         <ul class="list-inline g-ul-li-lr-5--xs g-margin-b-0--xs">
                             <li>
-                                <button onclick="modal('my_modal');" class="cbp-lightbox s-icon s-icon--sm s-icon--white-bg g-radius--circle">
+                                <button onclick="modal('my_modal5');viewup('rt5','rv5');" class="cbp-lightbox s-icon s-icon--sm s-icon--white-bg g-radius--circle">
                                     <i class="ti-fullscreen"></i>
                                 </button>
                             </li>
@@ -425,19 +474,19 @@
                         </ul>
                     </div>
                 </div>
-                <!-- Item -->
-                <div class="s-portfolio__item cbp-item logos graphic">
+                 <!-- Item -->
+                 <div class="s-portfolio__item cbp-item graphic">
                     <div class="s-portfolio__img-effect">
-                        <img src="img/970x647/07.jpg" alt="Portfolio Image">
+                        <img src=<%=ri6%> alt="Portfolio Image">
                     </div>
                     <div class="s-portfolio__caption-hover--cc">
                         <div class="g-margin-b-25--xs">
-                            <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Portfolio Item</h4>
-                            <p class="g-color--white-opacity">by KeenThemes Inc.</p>
+                            <h2 class="g-font-size-18--xs g-color--white g-margin-b-5--xs"><%=rt6%></h2>
+                            <p class="g-color--white-opacity"><%=rh6%></p>
                         </div>
                         <ul class="list-inline g-ul-li-lr-5--xs g-margin-b-0--xs">
                             <li>
-                                <button onclick="modal('my_modal');" class="cbp-lightbox s-icon s-icon--sm s-icon--white-bg g-radius--circle">
+                                <button onclick="modal('my_modal6');viewup('rt6','rv6');" class="cbp-lightbox s-icon s-icon--sm s-icon--white-bg g-radius--circle">
                                     <i class="ti-fullscreen"></i>
                                 </button>
                             </li>
@@ -445,19 +494,19 @@
                         </ul>
                     </div>
                 </div>
-                <!-- Item -->
-                <div class="s-portfolio__item cbp-item motion graphic">
+                 <!-- Item -->
+                 <div class="s-portfolio__item cbp-item graphic">
                     <div class="s-portfolio__img-effect">
-                        <img src="img/970x647/01.jpg" alt="Portfolio Image">
+                        <img src=<%=ri7%> alt="Portfolio Image">
                     </div>
                     <div class="s-portfolio__caption-hover--cc">
                         <div class="g-margin-b-25--xs">
-                            <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Portfolio Item</h4>
-                            <p class="g-color--white-opacity">by KeenThemes Inc.</p>
+                            <h2 class="g-font-size-18--xs g-color--white g-margin-b-5--xs"><%=rt7%></h2>
+                            <p class="g-color--white-opacity"><%=rh7%></p>
                         </div>
                         <ul class="list-inline g-ul-li-lr-5--xs g-margin-b-0--xs">
                             <li>
-                                <button onclick="modal('my_modal');" class="cbp-lightbox s-icon s-icon--sm s-icon--white-bg g-radius--circle">
+                                <button onclick="modal('my_modal7');viewup('rt7','rv7');" class="cbp-lightbox s-icon s-icon--sm s-icon--white-bg g-radius--circle">
                                     <i class="ti-fullscreen"></i>
                                 </button>
                             </li>
@@ -465,19 +514,19 @@
                         </ul>
                     </div>
                 </div>
-                <!-- Item -->
-                <div class="s-portfolio__item cbp-item logos">
+                 <!-- Item -->
+                 <div class="s-portfolio__item cbp-item graphic">
                     <div class="s-portfolio__img-effect">
-                        <img src="img/400x500/03.jpg" alt="Portfolio Image">
+                        <img src=<%=ri8%> alt="Portfolio Image">
                     </div>
                     <div class="s-portfolio__caption-hover--cc">
                         <div class="g-margin-b-25--xs">
-                            <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Portfolio Item</h4>
-                            <p class="g-color--white-opacity">by KeenThemes Inc.</p>
+                            <h2 class="g-font-size-18--xs g-color--white g-margin-b-5--xs"><%=rt8%></h2>
+                            <p class="g-color--white-opacity"><%=rh8%></p>
                         </div>
                         <ul class="list-inline g-ul-li-lr-5--xs g-margin-b-0--xs">
                             <li>
-                                <button onclick="modal('my_modal');" class="cbp-lightbox s-icon s-icon--sm s-icon--white-bg g-radius--circle">
+                                <button onclick="modal('my_modal8');viewup('rt8','rv8');" class="cbp-lightbox s-icon s-icon--sm s-icon--white-bg g-radius--circle">
                                     <i class="ti-fullscreen"></i>
                                 </button>
                             </li>
@@ -485,19 +534,19 @@
                         </ul>
                     </div>
                 </div>
-                <!-- Item -->
-                <div class="s-portfolio__item cbp-item motion graphic">
+                 <!-- Item -->
+                 <div class="s-portfolio__item cbp-item graphic">
                     <div class="s-portfolio__img-effect">
-                        <img src="img/400x500/01.jpg" alt="Portfolio Image">
+                        <img src=<%=ri9%> alt="Portfolio Image">
                     </div>
                     <div class="s-portfolio__caption-hover--cc">
                         <div class="g-margin-b-25--xs">
-                            <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Portfolio Item</h4>
-                            <p class="g-color--white-opacity">by KeenThemes Inc.</p>
+                            <h2 class="g-font-size-18--xs g-color--white g-margin-b-5--xs"><%=rt9%></h2>
+                            <p class="g-color--white-opacity"><%=rh9%></p>
                         </div>
                         <ul class="list-inline g-ul-li-lr-5--xs g-margin-b-0--xs">
                             <li>
-                                <button onclick="modal('my_modal');" class="cbp-lightbox s-icon s-icon--sm s-icon--white-bg g-radius--circle">
+                                <button onclick="modal('my_modal9');viewup('rt9','rv9');" class="cbp-lightbox s-icon s-icon--sm s-icon--white-bg g-radius--circle">
                                     <i class="ti-fullscreen"></i>
                                 </button>
                             </li>
@@ -505,39 +554,19 @@
                         </ul>
                     </div>
                 </div>
-                <!-- Item -->
-                <div class="s-portfolio__item cbp-item motion graphic">
+                 <!-- Item -->
+                 <div class="s-portfolio__item cbp-item graphic">
                     <div class="s-portfolio__img-effect">
-                        <img src="img/970x647/05.jpg" alt="Portfolio Image">
+                        <img src=<%=ri10%> alt="Portfolio Image">
                     </div>
                     <div class="s-portfolio__caption-hover--cc">
                         <div class="g-margin-b-25--xs">
-                            <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Portfolio Item</h4>
-                            <p class="g-color--white-opacity">by KeenThemes Inc.</p>
+                            <h2 class="g-font-size-18--xs g-color--white g-margin-b-5--xs"><%=rt10%></h2>
+                            <p class="g-color--white-opacity"><%=rh10%></p>
                         </div>
                         <ul class="list-inline g-ul-li-lr-5--xs g-margin-b-0--xs">
                             <li>
-                                <button onclick="modal('my_modal');" class="cbp-lightbox s-icon s-icon--sm s-icon--white-bg g-radius--circle">
-                                    <i class="ti-fullscreen"></i>
-                                </button>
-                            </li>
-                           
-                        </ul>
-                    </div>
-                </div>
-                <!-- Item -->
-                <div class="s-portfolio__item cbp-item motion graphic">
-                    <div class="s-portfolio__img-effect">
-                        <img src="img/970x647/06.jpg" alt="Portfolio Image">
-                    </div>
-                    <div class="s-portfolio__caption-hover--cc">
-                        <div class="g-margin-b-25--xs">
-                            <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Portfolio Item</h4>
-                            <p class="g-color--white-opacity">by KeenThemes Inc.</p>
-                        </div>
-                        <ul class="list-inline g-ul-li-lr-5--xs g-margin-b-0--xs">
-                            <li>
-                                <button onclick="modal('my_modal');" class="cbp-lightbox s-icon s-icon--sm s-icon--white-bg g-radius--circle">
+                                <button onclick="modal('my_modal10');viewup('rt10','rv10');" class="cbp-lightbox s-icon s-icon--sm s-icon--white-bg g-radius--circle">
                                     <i class="ti-fullscreen"></i>
                                 </button>
                             </li>
@@ -576,10 +605,83 @@
         </div>
         <!--========== END PAGE CONTENT ==========-->
 
-        <!--========== POPUP ==========-->
+
+
+        <!--========== REVIEW MODAL ==========-->
         
 
-        <div id="my_modal">
+        <div id="my_modal1">
+            <a class="modal_close_btn">
+
+            </a>
+            <!-- <form action ="/index_portfolio/likesup" method="POST"> -->
+            <table width="1200px" !important;>
+                <tr>
+                    <td rowspan="2" >
+
+                        <div id="slider-wrap">
+                                    <img id="rvi" style="background: 50% 50% no-repeat; width:800px; height:800px" src=<%=ri1%>
+                        </div>
+
+                    </td>
+                    <td width="50%" style="height: 600px; background:white; padding-left: 30px;  padding-right: 30px;" >
+                       <table>
+                        <tr style="height: 80px; padding-top: 30px;">
+                            <td colspan='5' style="font-size: 27px; color:#5D5D5D; font-weight: bold;  vertical-align:middle;"id ="rt1">
+                                <%=rt1%> 
+                            </td>
+                        </tr>
+                        <tr style="height: 20px; vertical-align: bottom; ">
+                            <td>
+                               작성자 :  <%=ru1%>
+                            </td>
+                            <td  style="padding-left:10px; padding-right: 10px;"> | </td>
+                            <td>
+                                장소 : <%=ra1%>
+                            </td>
+                            <td style="padding-left:10px;"> | </td>
+                            <td id = 'rv1'>
+                                조회수 : <%=rv1%>
+                            </td>
+                        </tr>
+                        <tr  style="height: 400px; vertical-align: top;">
+                            <!-- 내용 --> 
+                            <td colspan='5'style="padding-top:30px; color:#5D5D5D; font-size: 18px; line-height:180%; ">
+                                <%=rm1%>
+                            </td>
+                        </tr>
+                        <tr style="height: 50px">
+                            <!-- 해시태그 -->
+                            <td colspan='5' style="color: #e9a665; font-size: 2ch;">
+                                <%=rh1%>
+                            </td>
+                        </tr>
+                       </table>
+                    </td>
+                </tr>
+                <tr width="50%" style="background:#d3c9c0;">
+                    <td style="vertical-align: top;">
+                        <div class="float-left" style="font-size: 32px; color:white; padding-left:30px; padding-top: 30px;">
+                            <!-- <a href="/index_portfolio/likeup"><i class="fa fa-heart-o"></i><%=rl1%></a> -->
+                            <button onclick="likeup('rt1','rl1');" id ='rl1' style="color: white; border:0; outline:0; background: none;"><i class="fa fa-heart-o" style="margin-right: 10px; color: white;"></i><%=rl1%></button>
+                            <!-- filled heart = fa fa-heart (font-awesom.min.css)-->
+                        </div>
+                        <div class="float-right" style="font-size: 32px; color:white; padding-right:40px; padding-top: 30px;">
+                            <a href="/faq">
+                                <i class="fa fa-upload" style="color:white; margin-right: 15px;"></i>
+                            </a>
+                            <a>
+                                <i class="fa fa-window-close" style="color:white"></i>
+                            </a>
+                            <!-- filled heart = fa fa-heart (font-awesom.min.css)-->
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <!-- </form> -->
+        </div>
+
+        <div id="my_modal2">
             <a class="modal_close_btn">
                 <i class="ti-fullscreen"></i>
             </a>
@@ -589,32 +691,7 @@
                     <td rowspan="2">
                         <!--========== REVIEW SWIPER SLIDER ==========-->
                         <div id="slider-wrap">
-                            <ul id="rv-slider">
-                                <li id="rv">
-                                    <img id="rvi" src="img/upload/insta_01.jpg">
-                                </li>
-                        
-                                <li id="rv">
-                                    <img id="rvi"src="https://fakeimg.pl/350x200/D27328/000?text=22222">
-                                </li>
-                        
-                                <li id="rv">
-                                    <img id="rvi" src="https://fakeimg.pl/350x200/FF607F/000?text=33333">
-                                </li>
-                        
-                                <li id="rv">
-                                    <img id="rvi" src="https://fakeimg.pl/350x200/0A6E0A/000?text=44444">
-                                </li>
-                        
-                            </ul>
-                        
-                            <div class="slider-btns" id="next"><span>▶</span></div>
-                            <div class="slider-btns" id="previous"><span>◀</span></div>
-                        
-                            <div id="slider-pagination-wrap">
-                                <ul>
-                                </ul>
-                            </div>
+                                    <img id="rvi" src=<%=ri2%>
                         </div>
                             
                         <!--========== END SWIPER SLIDER ==========-->
@@ -622,32 +699,31 @@
                     <td width="50%" style="height: 320px; background:white; padding-left: 30px;  padding-right: 30px;" >
                        <table>
                         <tr style="height: 50px; padding-top:10px">
-                            <td colspan='5' style="font-size: 27px; color:#5D5D5D; font-weight: bold;  vertical-align:middle;">
-                                <%=title%>
+                            <td colspan='5' style="font-size: 27px; color:#5D5D5D; font-weight: bold;  vertical-align:middle;" id='rt2'>
+                                <%=rt2%>
                             </td>
                         </tr>
                         <tr style="height: 20px; vertical-align: bottom; ">
                             <td>
-                                <%=userID%>
+                                <%=ru2%>
                             </td>
                             <td  style=" padding-right: 10px;"> | </td>
-
-                            <td>
-                                12월 06일
+                            <td id = 'rv2'>
+                                <%=rv2%>
                             </td>
                             <td  style="padding-left:10px; padding-right: 10px;"> | </td>
                             <td>
-                                <%=address%>
+                                <%=ra2%>
                             </td>
                         </tr>
                         <tr  style="height: 180px; vertical-align: top;">
                             <td colspan='5'style="padding-top:30px; color:#5D5D5D; font-size: 18px; line-height:100%; ">
-                                <%=message%>
+                                <%=rm2%>
                             </td>
                         </tr>
                         <tr style="height: 20px">
                             <td colspan='5' style="color: #F2AE8B;">
-                                <%=hashtag%>
+                                <%=rh2%>
                             </td>
                         </tr>
                        </table>
@@ -656,95 +732,525 @@
                 <tr width="50%" style="background: white;">
                     <td style="vertical-align: top;">
                         <hr width="100%"> <!--구분선-->
-                                        <table height="240px" style="color:#5D5D5D;">
-                                            <tr>
-                                                <td colspan='3' style="font-size: 27px; color:#5D5D5D; font-weight: bold; padding-left :30px; padding-top:10px; padding-bottom:10px; vertical-align: top;">
-                                                        COMMENT
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td width="110px" style="padding-left: 30px;">
-                                                    gyu1234
-                                                </td>
-                                                <td colspan='2' style="padding-left: 20px;">
-                                                    저는 불편했어요
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td width="110px" style="padding-left: 30px;">
-                                                    gyu1234
-                                                </td>
-                                                <td colspan='2' style="padding-left: 20px;">
-                                                    저는 불편했어요
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td width="110px" style="padding-left: 30px;">
-                                                    gyu1234
-                                                </td>
-                                                <td  colspan='2' style="padding-left: 20px;">
-                                                    저는 불편했어요
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td width="110px" style="padding-left:30px;">
-                                                    　
-                                                </td>
-                                                <td colspan='2' style="padding-left: 20px;">
-                                                    　
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td width="110px" style="padding-left: 30px;">
-                                                    hana_two3
-                                                </td>
-                                                <td  width="335px" style="padding-left: 20px;">
-                                                    <div class="container-comment">
-                                                        <div class="wrap-comment">
-                                                            <form class="contact_comment-form validate-form">
-                                                                <div class="wrap-input100 validate-input" data-validate="코멘트를 입력하세요.">
-                                                                    <input class="input_comment" type="text" name="title" 
-                                                                    style=" width:300px; border-left-width:0; border-right-width:0; border-top-width:0; border-bottom-width:1;" 
-                                                                    placeholder="저도 여기 좋았어요!">
-                                                                    <span class="focus-input100"></span>
-                                                                </div>
-                                                            </form>
-                                                        </div>
-                                                    </div>
-                                                
-                                                </td>
-                                                <td>
-                                                    <div class="container-contact100-form-btn">
-                                                        <button class="contact100-form-btn" 
-                                                        style="width: 60px; border: none;  text-align: center; border-radius: 30px;">
-                                                            <span>
-                                                                등록
-                                                                <i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
-                                                            </span>
-                                                        </button>
-                                                     </div>
-                                                </td>
-                                            </tr>
-
-
-                                        </table>
-                        <hr width="100%"> <!--구분선-->
+                                       
+                        
                         <div class="float-left" style="font-size: 32px; color:#5D5D5D; padding-left:30px;">
-                            <a href="#"><i class="fa fa-heart-o"></i><%=likes%></a>
-                            <!-- filled heart = fa fa-heart (font-awesom.min.css)-->
-                        </div>
-
-                        <div class="float-right" style="font-size: 32px; color:#5D5D5D; padding-right:40px;">
-                            <a href="#"><i class="fa fa-download"></i></a>
-                            <!-- filled heart = fa fa-heart (font-awesom.min.css)-->
+                            <button onclick="likeup('rt2','rl2');" id ='rl2'><i class="fa fa-heart-o"></i><%=rl2%></button>
                         </div>
                     </td>
                 </tr>
             </table>
-
         </div>
 
+        <div id="my_modal3">
+            <a class="modal_close_btn">
+                <i class="ti-fullscreen"></i>
+            </a>
+
+            <table width="100%" !important;>
+                <tr>
+                    <td rowspan="2">
+                        <!--========== REVIEW SWIPER SLIDER ==========-->
+                        <div id="slider-wrap">
+                                    <img id="rvi" src=<%=ri3%>
+                        </div>
+                            
+                        <!--========== END SWIPER SLIDER ==========-->
+                    </td>
+                    <td width="50%" style="height: 320px; background:white; padding-left: 30px;  padding-right: 30px;" >
+                       <table>
+                        <tr style="height: 50px; padding-top:10px">
+                            <td colspan='5' style="font-size: 27px; color:#5D5D5D; font-weight: bold;  vertical-align:middle;" id='rt3'>
+                                <%=rt3%>
+                            </td>
+                        </tr>
+                        <tr style="height: 20px; vertical-align: bottom; ">
+                            <td>
+                                <%=ru3%>
+                            </td>
+                            <td  style=" padding-right: 10px;"> | </td>
+                            <td id = 'rv3'>
+                                <%=rv3%>
+                            </td>
+                            <td  style="padding-left:10px; padding-right: 10px;"> | </td>
+                            <td>
+                                <%=ra3%>
+                            </td>
+                        </tr>
+                        <tr  style="height: 180px; vertical-align: top;">
+                            <td colspan='5'style="padding-top:30px; color:#5D5D5D; font-size: 18px; line-height:100%; ">
+                                <%=rm3%>
+                            </td>
+                        </tr>
+                        <tr style="height: 20px">
+                            <td colspan='5' style="color: #F2AE8B;">
+                                <%=rh3%>
+                            </td>
+                        </tr>
+                       </table>
+                    </td>
+                </tr>
+                <tr width="50%" style="background: white;">
+                    <td style="vertical-align: top;">
+                        <hr width="100%"> <!--구분선-->
+                                       
+                        
+                        <div class="float-left" style="font-size: 32px; color:#5D5D5D; padding-left:30px;">
+                            <button onclick="likeup('rt3','rl3');" id ='rl3'><i class="fa fa-heart-o"></i><%=rl3%></button>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="my_modal4">
+            <a class="modal_close_btn">
+                <i class="ti-fullscreen"></i>
+            </a>
+
+            <table width="100%" !important;>
+                <tr>
+                    <td rowspan="2">
+                        <!--========== REVIEW SWIPER SLIDER ==========-->
+                        <div id="slider-wrap">
+                                    <img id="rvi" src=<%=ri4%>
+                        </div>
+                            
+                        <!--========== END SWIPER SLIDER ==========-->
+                    </td>
+                    <td width="50%" style="height: 320px; background:white; padding-left: 30px;  padding-right: 30px;" >
+                       <table>
+                        <tr style="height: 50px; padding-top:10px">
+                            <td colspan='5' style="font-size: 27px; color:#5D5D5D; font-weight: bold;  vertical-align:middle;" id='rt4'>
+                                <%=rt4%>
+                            </td>
+                        </tr>
+                        <tr style="height: 20px; vertical-align: bottom; ">
+                            <td>
+                                <%=ru4%>
+                            </td>
+                            <td  style=" padding-right: 10px;"> | </td>
+                            <td id = 'rv4'>
+                                <%=rv4%>
+                            </td>
+                            <td  style="padding-left:10px; padding-right: 10px;"> | </td>
+                            <td>
+                                <%=ra4%>
+                            </td>
+                        </tr>
+                        <tr  style="height: 180px; vertical-align: top;">
+                            <td colspan='5'style="padding-top:30px; color:#5D5D5D; font-size: 18px; line-height:100%; ">
+                                <%=rm4%>
+                            </td>
+                        </tr>
+                        <tr style="height: 20px">
+                            <td colspan='5' style="color: #F2AE8B;">
+                                <%=rh4%>
+                            </td>
+                        </tr>
+                       </table>
+                    </td>
+                </tr>
+                <tr width="50%" style="background: white;">
+                    <td style="vertical-align: top;">
+                        <hr width="100%"> <!--구분선-->
+                                       
+                        
+                        <div class="float-left" style="font-size: 32px; color:#5D5D5D; padding-left:30px;">
+                            <button onclick="likeup('rt4','rl4');" id ='rl4'><i class="fa fa-heart-o"></i><%=rl4%></button>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="my_modal5">
+            <a class="modal_close_btn">
+                <i class="ti-fullscreen"></i>
+            </a>
+
+            <table width="100%" !important;>
+                <tr>
+                    <td rowspan="2">
+                        <!--========== REVIEW SWIPER SLIDER ==========-->
+                        <div id="slider-wrap">
+                                    <img id="rvi" src=<%=ri5%>
+                        </div>
+                            
+                        <!--========== END SWIPER SLIDER ==========-->
+                    </td>
+                    <td width="50%" style="height: 320px; background:white; padding-left: 30px;  padding-right: 30px;" >
+                       <table>
+                        <tr style="height: 50px; padding-top:10px">
+                            <td colspan='5' style="font-size: 27px; color:#5D5D5D; font-weight: bold;  vertical-align:middle;" id='rt5'>
+                                <%=rt5%>
+                            </td>
+                        </tr>
+                        <tr style="height: 20px; vertical-align: bottom; ">
+                            <td>
+                                <%=ru5%>
+                            </td>
+                            <td  style=" padding-right: 10px;"> | </td>
+                            <td id = 'rv5'>
+                                <%=rv5%>
+                            </td>
+                            <td  style="padding-left:10px; padding-right: 10px;"> | </td>
+                            <td>
+                                <%=ra5%>
+                            </td>
+                        </tr>
+                        <tr  style="height: 180px; vertical-align: top;">
+                            <td colspan='5'style="padding-top:30px; color:#5D5D5D; font-size: 18px; line-height:100%; ">
+                                <%=rm5%>
+                            </td>
+                        </tr>
+                        <tr style="height: 20px">
+                            <td colspan='5' style="color: #F2AE8B;">
+                                <%=rh5%>
+                            </td>
+                        </tr>
+                       </table>
+                    </td>
+                </tr>
+                <tr width="50%" style="background: white;">
+                    <td style="vertical-align: top;">
+                        <hr width="100%"> <!--구분선-->
+                                       
+                        
+                        <div class="float-left" style="font-size: 32px; color:#5D5D5D; padding-left:30px;">
+                            <button onclick="likeup('rt5','rl5');" id ='rl5'><i class="fa fa-heart-o"></i><%=rl5%></button>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="my_modal6">
+            <a class="modal_close_btn">
+                <i class="ti-fullscreen"></i>
+            </a>
+
+            <table width="100%" !important;>
+                <tr>
+                    <td rowspan="2">
+                        <!--========== REVIEW SWIPER SLIDER ==========-->
+                        <div id="slider-wrap">
+                                    <img id="rvi" src=<%=ri6%>
+                        </div>
+                            
+                        <!--========== END SWIPER SLIDER ==========-->
+                    </td>
+                    <td width="50%" style="height: 320px; background:white; padding-left: 30px;  padding-right: 30px;" >
+                       <table>
+                        <tr style="height: 50px; padding-top:10px">
+                            <td colspan='5' style="font-size: 27px; color:#5D5D5D; font-weight: bold;  vertical-align:middle;" id='rt6'>
+                                <%=rt6%>
+                            </td>
+                        </tr>
+                        <tr style="height: 20px; vertical-align: bottom; ">
+                            <td>
+                                <%=ru6%>
+                            </td>
+                            <td  style=" padding-right: 10px;"> | </td>
+                            <td id = 'rv6'>
+                                <%=rv6%>
+                            </td>
+                            <td  style="padding-left:10px; padding-right: 10px;"> | </td>
+                            <td>
+                                <%=ra6%>
+                            </td>
+                        </tr>
+                        <tr  style="height: 180px; vertical-align: top;">
+                            <td colspan='5'style="padding-top:30px; color:#5D5D5D; font-size: 18px; line-height:100%; ">
+                                <%=rm6%>
+                            </td>
+                        </tr>
+                        <tr style="height: 20px">
+                            <td colspan='5' style="color: #F2AE8B;">
+                                <%=rh6%>
+                            </td>
+                        </tr>
+                       </table>
+                    </td>
+                </tr>
+                <tr width="50%" style="background: white;">
+                    <td style="vertical-align: top;">
+                        <hr width="100%"> <!--구분선-->
+                                       
+                        
+                        <div class="float-left" style="font-size: 32px; color:#5D5D5D; padding-left:30px;">
+                            <button onclick="likeup('rt6','rl6');" id ='rl6'><i class="fa fa-heart-o"></i><%=rl6%></button>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="my_modal7">
+            <a class="modal_close_btn">
+                <i class="ti-fullscreen"></i>
+            </a>
+
+            <table width="100%" !important;>
+                <tr>
+                    <td rowspan="2">
+                        <!--========== REVIEW SWIPER SLIDER ==========-->
+                        <div id="slider-wrap">
+                                    <img id="rvi" src=<%=ri7%>
+                        </div>
+                            
+                        <!--========== END SWIPER SLIDER ==========-->
+                    </td>
+                    <td width="50%" style="height: 320px; background:white; padding-left: 30px;  padding-right: 30px;" >
+                       <table>
+                        <tr style="height: 50px; padding-top:10px">
+                            <td colspan='5' style="font-size: 27px; color:#5D5D5D; font-weight: bold;  vertical-align:middle;" id='rt7'>
+                                <%=rt7%>
+                            </td>
+                        </tr>
+                        <tr style="height: 20px; vertical-align: bottom; ">
+                            <td>
+                                <%=ru7%>
+                            </td>
+                            <td  style=" padding-right: 10px;"> | </td>
+                            <td id = 'rv7'>
+                                <%=rv7%>
+                            </td>
+                            <td  style="padding-left:10px; padding-right: 10px;"> | </td>
+                            <td>
+                                <%=ra7%>
+                            </td>
+                        </tr>
+                        <tr  style="height: 180px; vertical-align: top;">
+                            <td colspan='5'style="padding-top:30px; color:#5D5D5D; font-size: 18px; line-height:100%; ">
+                                <%=rm7%>
+                            </td>
+                        </tr>
+                        <tr style="height: 20px">
+                            <td colspan='5' style="color: #F2AE8B;">
+                                <%=rh7%>
+                            </td>
+                        </tr>
+                       </table>
+                    </td>
+                </tr>
+                <tr width="50%" style="background: white;">
+                    <td style="vertical-align: top;">
+                        <hr width="100%"> <!--구분선-->
+                                       
+                        
+                        <div class="float-left" style="font-size: 32px; color:#5D5D5D; padding-left:30px;">
+                            <button onclick="likeup('rt7','rl7');" id ='rl7'><i class="fa fa-heart-o"></i><%=rl7%></button>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="my_modal8">
+            <a class="modal_close_btn">
+                <i class="ti-fullscreen"></i>
+            </a>
+
+            <table width="100%" !important;>
+                <tr>
+                    <td rowspan="2">
+                        <!--========== REVIEW SWIPER SLIDER ==========-->
+                        <div id="slider-wrap">
+                                    <img id="rvi" src=<%=ri8%>
+                        </div>
+                            
+                        <!--========== END SWIPER SLIDER ==========-->
+                    </td>
+                    <td width="50%" style="height: 320px; background:white; padding-left: 30px;  padding-right: 30px;" >
+                       <table>
+                        <tr style="height: 50px; padding-top:10px">
+                            <td colspan='5' style="font-size: 27px; color:#5D5D5D; font-weight: bold;  vertical-align:middle;" id='rt8'>
+                                <%=rt8%>
+                            </td>
+                        </tr>
+                        <tr style="height: 20px; vertical-align: bottom; ">
+                            <td>
+                                <%=ru8%>
+                            </td>
+                            <td  style=" padding-right: 10px;"> | </td>
+                            <td id = 'rv8'>
+                                <%=rv8%>
+                            </td>
+                            <td  style="padding-left:10px; padding-right: 10px;"> | </td>
+                            <td>
+                                <%=ra8%>
+                            </td>
+                        </tr>
+                        <tr  style="height: 180px; vertical-align: top;">
+                            <td colspan='5'style="padding-top:30px; color:#5D5D5D; font-size: 18px; line-height:100%; ">
+                                <%=rm8%>
+                            </td>
+                        </tr>
+                        <tr style="height: 20px">
+                            <td colspan='5' style="color: #F2AE8B;">
+                                <%=rh8%>
+                            </td>
+                        </tr>
+                       </table>
+                    </td>
+                </tr>
+                <tr width="50%" style="background: white;">
+                    <td style="vertical-align: top;">
+                        <hr width="100%"> <!--구분선-->
+                                       
+                        
+                        <div class="float-left" style="font-size: 32px; color:#5D5D5D; padding-left:30px;">
+                            <button onclick="likeup('rt8','rl8');" id ='rl8'><i class="fa fa-heart-o"></i><%=rl8%></button>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="my_modal9">
+            <a class="modal_close_btn">
+                <i class="ti-fullscreen"></i>
+            </a>
+
+            <table width="100%" !important;>
+                <tr>
+                    <td rowspan="2">
+                        <!--========== REVIEW SWIPER SLIDER ==========-->
+                        <div id="slider-wrap">
+                                    <img id="rvi" src=<%=ri9%>
+                        </div>
+                            
+                        <!--========== END SWIPER SLIDER ==========-->
+                    </td>
+                    <td width="50%" style="height: 320px; background:white; padding-left: 30px;  padding-right: 30px;" >
+                       <table>
+                        <tr style="height: 50px; padding-top:10px">
+                            <td colspan='5' style="font-size: 27px; color:#5D5D5D; font-weight: bold;  vertical-align:middle;" id='rt9'>
+                                <%=rt9%>
+                            </td>
+                        </tr>
+                        <tr style="height: 20px; vertical-align: bottom; ">
+                            <td>
+                                <%=ru9%>
+                            </td>
+                            <td  style=" padding-right: 10px;"> | </td>
+                            <td id = 'rv9'>
+                                <%=rv9%>
+                            </td>
+                            <td  style="padding-left:10px; padding-right: 10px;"> | </td>
+                            <td>
+                                <%=ra9%>
+                            </td>
+                        </tr>
+                        <tr  style="height: 180px; vertical-align: top;">
+                            <td colspan='5'style="padding-top:30px; color:#5D5D5D; font-size: 18px; line-height:100%; ">
+                                <%=rm9%>
+                            </td>
+                        </tr>
+                        <tr style="height: 20px">
+                            <td colspan='5' style="color: #F2AE8B;">
+                                <%=rh9%>
+                            </td>
+                        </tr>
+                       </table>
+                    </td>
+                </tr>
+                <tr width="50%" style="background: white;">
+                    <td style="vertical-align: top;">
+                        <hr width="100%"> <!--구분선-->
+                                       
+                        
+                        <div class="float-left" style="font-size: 32px; color:#5D5D5D; padding-left:30px;">
+                            <button onclick="likeup('rt9','rl9');" id ='rl9'><i class="fa fa-heart-o"></i><%=rl9%></button>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="my_modal10">
+            <a class="modal_close_btn">
+                <i class="ti-fullscreen"></i>
+            </a>
+
+            <table width="100%" !important;>
+                <tr>
+                    <td rowspan="2">
+                        <!--========== REVIEW SWIPER SLIDER ==========-->
+                        <div id="slider-wrap">
+                                    <img id="rvi" src=<%=ri10%>
+                        </div>
+                            
+                        <!--========== END SWIPER SLIDER ==========-->
+                    </td>
+                    <td width="50%" style="height: 320px; background:white; padding-left: 30px;  padding-right: 30px;" >
+                       <table>
+                        <tr style="height: 50px; padding-top:10px">
+                            <td colspan='5' style="font-size: 27px; color:#5D5D5D; font-weight: bold;  vertical-align:middle;" id='rt10'>
+                                <%=rt10%>
+                            </td>
+                        </tr>
+                        <tr style="height: 20px; vertical-align: bottom; ">
+                            <td>
+                                <%=ru10%>
+                            </td>
+                            <td  style=" padding-right: 10px;"> | </td>
+                            <td id = 'rv10'>
+                                <%=rv10%>
+                            </td>
+                            <td  style="padding-left:10px; padding-right: 10px;"> | </td>
+                            <td>
+                                <%=ra10%>
+                            </td>
+                        </tr>
+                        <tr  style="height: 180px; vertical-align: top;">
+                            <td colspan='5'style="padding-top:30px; color:#5D5D5D; font-size: 18px; line-height:100%; ">
+                                <%=rm10%>
+                            </td>
+                        </tr>
+                        <tr style="height: 20px">
+                            <td colspan='5' style="color: #F2AE8B;">
+                                <%=rh10%>
+                            </td>
+                        </tr>
+                       </table>
+                    </td>
+                </tr>
+                <tr width="50%" style="background: white;">
+                    <td style="vertical-align: top;">
+                        <hr width="100%"> <!--구분선-->
+                                       
+                        
+                        <div class="float-left" style="font-size: 32px; color:#5D5D5D; padding-left:30px;">
+                            <button onclick="likeup('rt10','rl10');" id ='rl10'><i class="fa fa-heart-o"></i><%=rl10%></button>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
         <script>
+            
+            function likeup(id1,id2){
+                var rt1 = document.getElementById(id1);
+                var rl1 = document.getElementById(id2);
+                $.ajax({
+                    type : 'POST',
+                    url : '/index_portfolio/likeup',
+                    data : {
+                        title: rt1.innerText,
+                        like : Number(rl1.innerText)+1
+                    }
+                })
+                window.location.reload();
+            }
+
+            function viewup(id1,id2){
+                var rt = document.getElementById(id1);
+                var rv = document.getElementById(id2);
+                $.ajax({
+                    type : 'POST',
+                    url : '/index_portfolio/viewup',
+                    data : {
+                        title: rt.innerText,
+                        view : Number(rv.innerText)+1
+                    }
+                })
+            }
+
             function modal(id) {
                 var zIndex = 9999;
                 var modal = document.getElementById(id);
@@ -765,6 +1271,13 @@
                 modal.querySelector('.modal_close_btn').addEventListener('click', function() {
                     bg.remove();
                     modal.style.display = 'none';
+                    window.location.reload();
+                });
+
+                modal.querySelector('.fa-window-close').addEventListener('click', function() {
+                    bg.remove();
+                    modal.style.display = 'none';
+                    window.location.reload();
                 });
 
                 modal.setStyle({
@@ -787,11 +1300,9 @@
                 return this;
             };
 
-            document.getElementById('popup_open_btn').addEventListener('click', function() {
-                modal('my_modal');
-            });
+           
        
-    </script>
+        </script>
         </script>
 
 

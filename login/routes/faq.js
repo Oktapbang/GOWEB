@@ -52,13 +52,14 @@ router.use(session({
   var message = req.body.message;
   var hashtag = req.body.hashtag;
   var imagePath = req.file.path;
-  var likes = 1;
+  var likes = 0;
+  var views = 0;
  
   var userID = req.session.username;
 
-  console.log(title,address,message,hashtag,imagePath,likes,userID);
+  console.log(title,address,message,hashtag,imagePath,likes,views,userID);
 
-  connection.query('INSERT INTO review (title,address,message,hashtag,imagePath,likes,userID) VALUES(?,?,?,?,?,?,?)', [title,address,message,hashtag,imagePath,likes,userID],
+  connection.query('INSERT INTO review (title,address,message,hashtag,imagePath,likes,views,userID) VALUES(?,?,?,?,?,?,?,?)', [title,address,message,hashtag,imagePath,likes,views,userID],
     function (error, data) {
       if (error)
        console.log(error);

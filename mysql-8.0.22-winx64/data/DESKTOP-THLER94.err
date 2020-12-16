@@ -115,3 +115,22 @@
 2020-12-11T17:57:49.707944Z 0 [ERROR] [MY-010020] [Server] Data Dictionary initialization failed.
 2020-12-11T17:57:49.709309Z 0 [ERROR] [MY-010119] [Server] Aborting
 2020-12-11T17:57:49.710667Z 0 [System] [MY-010910] [Server] C:\Users\fishb\Desktop\goweb\GOWEB\mysql-8.0.22-winx64\bin\mysqld.exe: Shutdown complete (mysqld 8.0.22)  MySQL Community Server - GPL.
+2020-12-13T04:43:39.427005Z 0 [System] [MY-010116] [Server] C:\Users\fishb\Desktop\goweb\GOWEB\mysql-8.0.22-winx64\bin\mysqld.exe (mysqld 8.0.22) starting as process 33036
+2020-12-13T04:43:39.439392Z 0 [Warning] [MY-013242] [Server] --character-set-server: 'utf8' is currently an alias for the character set UTF8MB3, but will be an alias for UTF8MB4 in a future release. Please consider using UTF8MB4 in order to be unambiguous.
+2020-12-13T04:43:39.476293Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2020-12-13T04:43:40.676011Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2020-12-13T04:43:40.828134Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
+2020-12-13T04:43:40.856213Z 0 [System] [MY-010229] [Server] Starting XA crash recovery...
+2020-12-13T04:43:40.862892Z 0 [System] [MY-010232] [Server] XA crash recovery finished.
+2020-12-13T04:43:40.937461Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2020-12-13T04:43:40.938916Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2020-12-13T04:43:40.997141Z 0 [System] [MY-010931] [Server] C:\Users\fishb\Desktop\goweb\GOWEB\mysql-8.0.22-winx64\bin\mysqld.exe: ready for connections. Version: '8.0.22'  socket: ''  port: 3306  MySQL Community Server - GPL.
+2020-12-13T13:49:54.879929Z 0 [System] [MY-010116] [Server] C:\Users\fishb\Desktop\goweb\GOWEB\mysql-8.0.22-winx64\bin\mysqld.exe (mysqld 8.0.22) starting as process 21092
+2020-12-13T13:49:54.881823Z 0 [Warning] [MY-013242] [Server] --character-set-server: 'utf8' is currently an alias for the character set UTF8MB3, but will be an alias for UTF8MB4 in a future release. Please consider using UTF8MB4 in order to be unambiguous.
+2020-12-13T13:49:54.904326Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2020-12-13T13:49:54.908291Z 1 [ERROR] [MY-012271] [InnoDB] The innodb_system data file 'ibdata1' must be writable
+2020-12-13T13:49:54.909754Z 1 [ERROR] [MY-012278] [InnoDB] The innodb_system data file 'ibdata1' must be writable
+2020-12-13T13:49:54.911278Z 1 [ERROR] [MY-010334] [Server] Failed to initialize DD Storage Engine
+2020-12-13T13:49:54.912700Z 0 [ERROR] [MY-010020] [Server] Data Dictionary initialization failed.
+2020-12-13T13:49:54.914022Z 0 [ERROR] [MY-010119] [Server] Aborting
+2020-12-13T13:49:54.915351Z 0 [System] [MY-010910] [Server] C:\Users\fishb\Desktop\goweb\GOWEB\mysql-8.0.22-winx64\bin\mysqld.exe: Shutdown complete (mysqld 8.0.22)  MySQL Community Server - GPL.
