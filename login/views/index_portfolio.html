@@ -207,7 +207,7 @@
                                 </div>
 
                                 <div class="float-right" style="margin-right: 10px;">
-                                    <i class="fa fa-film"></i> <%=v1%> </a>
+                                    <i class="fa fa-film" id></i> <%=v1%> </a>
                                     <!-- eye = fa fa-eye_open (font-awesom.min.css)-->
                                 </div>
                             </div><!-- end meta -->
@@ -395,7 +395,7 @@
                 </div>
             
                 <!-- Item -->
-                <div class="s-portfolio__item cbp-item graphic">
+                <div class="s-portfolio__item cbp-item motion">
                     <div class="s-portfolio__img-effect">
                         <img src=<%=ri2%> alt="Portfolio Image">
                     </div>
@@ -415,7 +415,7 @@
                     </div>
                 </div>
                 <!-- Item -->
-                <div class="s-portfolio__item cbp-item graphic">
+                <div class="s-portfolio__item cbp-item logos ">
                     <div class="s-portfolio__img-effect">
                         <img src=<%=ri3%> alt="Portfolio Image">
                     </div>
@@ -435,7 +435,7 @@
                     </div>
                 </div>
                 <!-- Item -->
-                <div class="s-portfolio__item cbp-item graphic">
+                <div class="s-portfolio__item cbp-item graphic logos motion">
                     <div class="s-portfolio__img-effect">
                         <img src=<%=ri4%> alt="Portfolio Image">
                     </div>
@@ -455,7 +455,7 @@
                     </div>
                 </div>
                  <!-- Item -->
-                 <div class="s-portfolio__item cbp-item graphic">
+                 <div class="s-portfolio__item cbp-item graphic logos motion">
                     <div class="s-portfolio__img-effect">
                         <img src=<%=ri5%> alt="Portfolio Image">
                     </div>
@@ -495,7 +495,7 @@
                     </div>
                 </div>
                  <!-- Item -->
-                 <div class="s-portfolio__item cbp-item graphic">
+                 <div class="s-portfolio__item cbp-item motion">
                     <div class="s-portfolio__img-effect">
                         <img src=<%=ri7%> alt="Portfolio Image">
                     </div>
@@ -515,7 +515,7 @@
                     </div>
                 </div>
                  <!-- Item -->
-                 <div class="s-portfolio__item cbp-item graphic">
+                 <div class="s-portfolio__item cbp-item logos">
                     <div class="s-portfolio__img-effect">
                         <img src=<%=ri8%> alt="Portfolio Image">
                     </div>
@@ -555,7 +555,7 @@
                     </div>
                 </div>
                  <!-- Item -->
-                 <div class="s-portfolio__item cbp-item graphic">
+                 <div class="s-portfolio__item cbp-item graphic motion">
                     <div class="s-portfolio__img-effect">
                         <img src=<%=ri10%> alt="Portfolio Image">
                     </div>
@@ -641,13 +641,13 @@
                             </td>
                             <td style="padding-left:10px;"> | </td>
                             <td id = 'rv1'>
-                                조회수 : <%=rv1%>
+                                <%=rv1%>
                             </td>
                         </tr>
                         <tr  style="height: 400px; vertical-align: top;">
                             <!-- 내용 --> 
                             <td colspan='5'style="padding-top:30px; color:#5D5D5D; font-size: 18px; line-height:180%; " !important>
-                                <%-rm1%>
+                                <%=rm1%>
                             </td>
                         </tr>
                         <tr style="height: 50px">
@@ -683,64 +683,75 @@
 
         <div id="my_modal2">
             <a class="modal_close_btn">
-                <i class="ti-fullscreen"></i>
-            </a>
 
-            <table width="100%" !important;>
+            </a>
+            <!-- <form action ="/index_portfolio/likesup" method="POST"> -->
+            <table width="1200px" !important;>
                 <tr>
-                    <td rowspan="2">
-                        <!--========== REVIEW SWIPER SLIDER ==========-->
+                    <td rowspan="2" >
+
                         <div id="slider-wrap">
-                                    <img id="rvi" src=<%=ri2%>
+                                    <img id="rvi" style="background: 50% 50% no-repeat; width:800px; height:800px" src=<%=ri2%>
                         </div>
-                            
-                        <!--========== END SWIPER SLIDER ==========-->
+
                     </td>
-                    <td width="50%" style="height: 320px; background:white; padding-left: 30px;  padding-right: 30px;" >
+                    <td width="50%" style="height: 600px; background:white; padding-left: 30px;  padding-right: 30px;" >
                        <table>
-                        <tr style="height: 50px; padding-top:10px">
-                            <td colspan='5' style="font-size: 27px; color:#5D5D5D; font-weight: bold;  vertical-align:middle;" id='rt2'>
-                                <%=rt2%>
+                        <tr style="height: 80px; padding-top: 30px;">
+                            <td colspan='5' style="font-size: 27px; color:#5D5D5D; font-weight: bold;  vertical-align:middle;"id ="rt2">
+                                <%=rt2%> 
                             </td>
                         </tr>
                         <tr style="height: 20px; vertical-align: bottom; ">
                             <td>
-                                <%=ru2%>
-                            </td>
-                            <td  style=" padding-right: 10px;"> | </td>
-                            <td id = 'rv2'>
-                                <%=rv2%>
+                               작성자 :  <%=ru2%>
                             </td>
                             <td  style="padding-left:10px; padding-right: 10px;"> | </td>
                             <td>
-                                <%=ra2%>
+                                장소 : <%=ra2%>
+                            </td>
+                            <td style="padding-left:10px;"> | </td>
+                            <td id = 'rv2'>
+                                조회수 : <%=rv2%>
                             </td>
                         </tr>
-                        <tr  style="height: 180px; vertical-align: top;">
-                            <td colspan='5'style="padding-top:30px; color:#5D5D5D; font-size: 18px; line-height:100%; ">
+                        <tr  style="height: 400px; vertical-align: top;">
+                            <!-- 내용 --> 
+                            <td colspan='5'style="padding-top:30px; color:#5D5D5D; font-size: 18px; line-height:180%; " !important>
                                 <%=rm2%>
                             </td>
                         </tr>
-                        <tr style="height: 20px">
-                            <td colspan='5' style="color: #F2AE8B;">
+                        <tr style="height: 50px">
+                            <!-- 해시태그 -->
+                            <td colspan='5' style="color: #e9a665; font-size: 2ch;">
                                 <%=rh2%>
                             </td>
                         </tr>
                        </table>
                     </td>
                 </tr>
-                <tr width="50%" style="background: white;">
+                <tr width="50%" style="background:#d3c9c0;">
                     <td style="vertical-align: top;">
-                        <hr width="100%"> <!--구분선-->
-                                       
-                        
-                        <div class="float-left" style="font-size: 32px; color:#5D5D5D; padding-left:30px;">
-                            <button onclick="likeup('rt2','rl2');" id ='rl2'><i class="fa fa-heart-o"></i><%=rl2%></button>
+                        <div class="float-left" style="font-size: 32px; color:white; padding-left:30px; padding-top: 30px;">
+                            <!-- <a href="/index_portfolio/likeup"><i class="fa fa-heart-o"></i><%=rl1%></a> -->
+                            <button onclick="likeup('rt2','rl2');" id ='rl2' style="color: white; border:0; outline:0; background: none;"><i class="fa fa-heart-o" style="margin-right: 10px; color: white;"></i><%=rl2%></button>
+                            <!-- filled heart = fa fa-heart (font-awesom.min.css)-->
+                        </div>
+                        <div class="float-right" style="font-size: 32px; color:white; padding-right:40px; padding-top: 30px;">
+                            <a href="/faq">
+                                <i class="fa fa-upload" style="color:white; margin-right: 15px;"></i>
+                            </a>
+                            <a>
+                                <i class="fa fa-window-close" style="color:white"></i>
+                            </a>
+                            <!-- filled heart = fa fa-heart (font-awesom.min.css)-->
                         </div>
                     </td>
                 </tr>
             </table>
+            <!-- </form> -->
         </div>
+
 
         <div id="my_modal3">
             <a class="modal_close_btn">
