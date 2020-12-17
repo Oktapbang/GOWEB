@@ -6,7 +6,6 @@ var session = require('express-session');
 var bodyParser = require('body-parser');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
-var MySqlStore = require('express-mysql-session')(session);
 
 var connection = mysql.createConnection({
 	host     : 'localhost',
@@ -18,19 +17,11 @@ var connection = mysql.createConnection({
 var app = express();
 app.use(session({
 	secret: 'secret',
-	resave: false,
-	saveUninitialized: true,
-	store : new MySqlStore({
-		host : 'localhost',
-		port : 3306,
-		user : 'web2020',
-		password : 'web2020',
-		database: 'web'
-	})
+	resave: true,
+	saveUninitialized: true
 }));
 
-app.use('/uploads', express.static('./uploads'));
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static('public'));
 app.use(bodyParser.urlencoded({extended : true}));
 app.use(bodyParser.json());
 
@@ -44,7 +35,7 @@ function restrict(req, res, next) {
 }
 
 app.use('/', function(request, response, next) {
-	if ( request.session.loggedin == true || request.url == "/login" || request.url == "/register" || request.url =="/guest" || request.url =="/guest/submit") {
+	if ( request.session.loggedin == true || request.url == "/login" || request.url == "/register" ) {
     next();
 	}
 	else {
@@ -81,20 +72,6 @@ app.post('/login', function(request, response) {
 		response.end();
 	}
 });
-
-app.get('/auth/logout',(req, res) => {
-	req.session.destroy(
-		function (err) {
-			if (err) {
-				console.log('세션 삭제시 에러');
-				return;
-			}
-			res.redirect('/login');
-			res.end();
-		}
-	); 
-});
-
 
 app.get('/register', function(request, response) {
 	response.sendFile(path.join(__dirname + '/views/register.html'));
@@ -155,14 +132,14 @@ app.get('/test2', function(request, response) {
 
 var indexRouter = require('./routes/index');
 var teamRouter = require('./routes/team');
+var aboutRouter = require('./routes/about');
 var faqRouter = require('./routes/faq');
 var loginRouter = require('./routes/login');
 var index_portfolioRouter = require('./routes/index_portfolio');
-var guestRouter = require('./routes/guest')
 
 // view engine setup
-app.engine('html', require('ejs').renderFile);
 app.set('views', path.join(__dirname, 'views'));
+app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
 // app.set('views', path.join(__dirname, 'views'));
 // app.set('view engine', 'ejs');
@@ -175,12 +152,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/team', teamRouter);
-
+app.use('/about', aboutRouter);
 app.use('/faq', faqRouter);
 app.use('/login', loginRouter);
 app.use('/index_portfolio', index_portfolioRouter);
-app.use('/guest',guestRouter);
-
 
 
 
@@ -191,7 +166,7 @@ app.use(function(req, res, next) {
 });
 
 // error handler
-/*app.use(function(err, req, res, next) {
+app.use(function(err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
@@ -199,7 +174,7 @@ app.use(function(req, res, next) {
   // render the error page
   res.status(err.status || 500);
   res.render('error');
-});*/
+});
 
 module.exports = app;
 

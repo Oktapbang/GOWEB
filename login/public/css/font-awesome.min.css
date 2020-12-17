@@ -17,9 +17,4 @@
  .fa-heart-o:before{content:"\f08a"}
  .fa-film:before{content:"\f06e"}
  .fa-download:before {content: "\f019"}
- .fa-window-close:before {
-    content: "\f2d3";
-  }
-  .fa-upload:before {
-    content: "\f093";
-  }
+
