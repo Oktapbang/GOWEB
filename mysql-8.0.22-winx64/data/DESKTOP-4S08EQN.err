@@ -27,3 +27,4 @@
 2020-12-18T05:54:52.964194Z 0 [System] [MY-010232] [Server] XA crash recovery finished.
 2020-12-18T05:54:53.290107Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
 2020-12-18T05:54:53.290844Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2020-12-18T05:54:53.659716Z 0 [System] [MY-010931] [Server] E:\goweb_again\GOWEB-1\mysql-8.0.22-winx64\bin\mysqld.exe: ready for connections. Version: '8.0.22'  socket: ''  port: 3306  MySQL Community Server - GPL.
