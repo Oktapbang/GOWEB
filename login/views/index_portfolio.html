@@ -6,7 +6,7 @@
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Megakit - HTML5 Theme</title>
+        <title>모두의 리뷰</title>
         <meta name="keywords" content="HTML5 Theme" />
         <meta name="description" content="Megakit - HTML5 Theme">
         <meta name="author" content="keenthemes.com">
@@ -609,7 +609,7 @@
 
         <!--========== REVIEW MODAL ==========-->
         
-
+        <!--========== MODAL 1 ==========-->
         <div id="my_modal1">
             <a class="modal_close_btn">
 
@@ -639,7 +639,10 @@
                             <td>
                                 장소 : <%=ra1%>
                             </td>
-                            <td style="padding-left:10px;"> | </td>
+                            <td style="padding-left:10px; padding-right: 10px;"> | </td>
+                            <td  style=" padding-right: 10px;">
+                                조회수 :
+                            </td>
                             <td id = 'rv1'>
                                 <%=rv1%>
                             </td>
@@ -647,7 +650,7 @@
                         <tr  style="height: 400px; vertical-align: top;">
                             <!-- 내용 --> 
                             <td colspan='5'style="padding-top:30px; color:#5D5D5D; font-size: 18px; line-height:180%; " !important>
-                                <%=rm1%>
+                                <%-rm1%>
                             </td>
                         </tr>
                         <tr style="height: 50px">
@@ -680,7 +683,7 @@
             </table>
             <!-- </form> -->
         </div>
-
+        <!--========== MODAL 2 ==========-->
         <div id="my_modal2">
             <a class="modal_close_btn">
 
@@ -710,15 +713,18 @@
                             <td>
                                 장소 : <%=ra2%>
                             </td>
-                            <td style="padding-left:10px;"> | </td>
+                            <td style="padding-left:10px; padding-right: 10px;"> | </td>
+                            <td  style=" padding-right: 10px;">
+                                조회수 :
+                            </td>
                             <td id = 'rv2'>
-                                조회수 : <%=rv2%>
+                                <%=rv2%>
                             </td>
                         </tr>
                         <tr  style="height: 400px; vertical-align: top;">
                             <!-- 내용 --> 
                             <td colspan='5'style="padding-top:30px; color:#5D5D5D; font-size: 18px; line-height:180%; " !important>
-                                <%=rm2%>
+                                <%-rm2%>
                             </td>
                         </tr>
                         <tr style="height: 50px">
@@ -753,486 +759,624 @@
         </div>
 
 
+        <!--========== MODAL 3 ==========-->
         <div id="my_modal3">
             <a class="modal_close_btn">
-                <i class="ti-fullscreen"></i>
-            </a>
 
-            <table width="100%" !important;>
+            </a>
+            <!-- <form action ="/index_portfolio/likesup" method="POST"> -->
+            <table width="1200px" !important;>
                 <tr>
-                    <td rowspan="2">
-                        <!--========== REVIEW SWIPER SLIDER ==========-->
+                    <td rowspan="2" >
+
                         <div id="slider-wrap">
-                                    <img id="rvi" src=<%=ri3%>
+                                    <img id="rvi" style="background: 50% 50% no-repeat; width:800px; height:800px" src=<%=ri3%>
                         </div>
-                            
-                        <!--========== END SWIPER SLIDER ==========-->
+
                     </td>
-                    <td width="50%" style="height: 320px; background:white; padding-left: 30px;  padding-right: 30px;" >
-                       <table>
-                        <tr style="height: 50px; padding-top:10px">
-                            <td colspan='5' style="font-size: 27px; color:#5D5D5D; font-weight: bold;  vertical-align:middle;" id='rt3'>
-                                <%=rt3%>
+                    <td width="50%" style="height: 600px; background:white; padding-left: 30px;  padding-right: 30px;" >
+                        <table>
+                        <tr style="height: 80px; padding-top: 30px;">
+                            <td colspan='5' style="font-size: 27px; color:#5D5D5D; font-weight: bold;  vertical-align:middle;"id ="rt3">
+                                <%=rt3%> 
                             </td>
                         </tr>
                         <tr style="height: 20px; vertical-align: bottom; ">
                             <td>
-                                <%=ru3%>
+                                작성자 :  <%=ru3%>
                             </td>
-                            <td  style=" padding-right: 10px;"> | </td>
+                            <td  style="padding-left:10px; padding-right: 10px;"> | </td>
+                            <td>
+                                장소 : <%=ra3%>
+                            </td>
+                            <td style="padding-left:10px; padding-right: 10px;"> | </td>
+                            <td  style=" padding-right: 10px;">
+                                조회수 :
+                            </td>
                             <td id = 'rv3'>
                                 <%=rv3%>
                             </td>
-                            <td  style="padding-left:10px; padding-right: 10px;"> | </td>
-                            <td>
-                                <%=ra3%>
+                        </tr>
+                        <tr  style="height: 400px; vertical-align: top;">
+                            <!-- 내용 --> 
+                            <td colspan='5'style="padding-top:30px; color:#5D5D5D; font-size: 18px; line-height:180%; " !important>
+                                <%-rm3%>
                             </td>
                         </tr>
-                        <tr  style="height: 180px; vertical-align: top;">
-                            <td colspan='5'style="padding-top:30px; color:#5D5D5D; font-size: 18px; line-height:100%; ">
-                                <%=rm3%>
-                            </td>
-                        </tr>
-                        <tr style="height: 20px">
-                            <td colspan='5' style="color: #F2AE8B;">
+                        <tr style="height: 50px">
+                            <!-- 해시태그 -->
+                            <td colspan='5' style="color: #e9a665; font-size: 2ch;">
                                 <%=rh3%>
                             </td>
                         </tr>
-                       </table>
+                        </table>
                     </td>
                 </tr>
-                <tr width="50%" style="background: white;">
+                <tr width="50%" style="background:#d3c9c0;">
                     <td style="vertical-align: top;">
-                        <hr width="100%"> <!--구분선-->
-                                       
-                        
-                        <div class="float-left" style="font-size: 32px; color:#5D5D5D; padding-left:30px;">
-                            <button onclick="likeup('rt3','rl3');" id ='rl3'><i class="fa fa-heart-o"></i><%=rl3%></button>
+                        <div class="float-left" style="font-size: 32px; color:white; padding-left:30px; padding-top: 30px;">
+                            <!-- <a href="/index_portfolio/likeup"><i class="fa fa-heart-o"></i><%=rl1%></a> -->
+                            <button onclick="likeup('rt3','rl3');" id ='rl3' style="color: white; border:0; outline:0; background: none;"><i class="fa fa-heart-o" style="margin-right: 10px; color: white;"></i><%=rl3%></button>
+                            <!-- filled heart = fa fa-heart (font-awesom.min.css)-->
+                        </div>
+                        <div class="float-right" style="font-size: 32px; color:white; padding-right:40px; padding-top: 30px;">
+                            <a href="/faq">
+                                <i class="fa fa-upload" style="color:white; margin-right: 15px;"></i>
+                            </a>
+                            <a>
+                                <i class="fa fa-window-close" style="color:white"></i>
+                            </a>
+                            <!-- filled heart = fa fa-heart (font-awesom.min.css)-->
                         </div>
                     </td>
                 </tr>
             </table>
+            <!-- </form> -->
         </div>
+
+
+
+
+        <!--========== MODAL 4 ==========-->
         <div id="my_modal4">
             <a class="modal_close_btn">
-                <i class="ti-fullscreen"></i>
-            </a>
 
-            <table width="100%" !important;>
+            </a>
+            <!-- <form action ="/index_portfolio/likesup" method="POST"> -->
+            <table width="1200px" !important;>
                 <tr>
-                    <td rowspan="2">
-                        <!--========== REVIEW SWIPER SLIDER ==========-->
+                    <td rowspan="2" >
+
                         <div id="slider-wrap">
-                                    <img id="rvi" src=<%=ri4%>
+                                    <img id="rvi" style="background: 50% 50% no-repeat; width:800px; height:800px" src=<%=ri4%>
                         </div>
-                            
-                        <!--========== END SWIPER SLIDER ==========-->
+
                     </td>
-                    <td width="50%" style="height: 320px; background:white; padding-left: 30px;  padding-right: 30px;" >
-                       <table>
-                        <tr style="height: 50px; padding-top:10px">
-                            <td colspan='5' style="font-size: 27px; color:#5D5D5D; font-weight: bold;  vertical-align:middle;" id='rt4'>
-                                <%=rt4%>
+                    <td width="50%" style="height: 600px; background:white; padding-left: 30px;  padding-right: 30px;" >
+                        <table>
+                        <tr style="height: 80px; padding-top: 30px;">
+                            <td colspan='5' style="font-size: 27px; color:#5D5D5D; font-weight: bold;  vertical-align:middle;"id ="rt4">
+                                <%=rt4%> 
                             </td>
                         </tr>
                         <tr style="height: 20px; vertical-align: bottom; ">
                             <td>
-                                <%=ru4%>
+                                작성자 :  <%=ru4%>
                             </td>
-                            <td  style=" padding-right: 10px;"> | </td>
+                            <td  style="padding-left:10px; padding-right: 10px;"> | </td>
+                            <td>
+                                장소 : <%=ra4%>
+                            </td>
+                            <td style="padding-left:10px; padding-right: 10px;"> | </td>
+                            <td  style=" padding-right: 10px;">
+                                조회수 :
+                            </td>
                             <td id = 'rv4'>
                                 <%=rv4%>
                             </td>
-                            <td  style="padding-left:10px; padding-right: 10px;"> | </td>
-                            <td>
-                                <%=ra4%>
+                        </tr>
+                        <tr  style="height: 400px; vertical-align: top;">
+                            <!-- 내용 --> 
+                            <td colspan='5'style="padding-top:30px; color:#5D5D5D; font-size: 18px; line-height:180%; " !important>
+                                <%-rm4%>
                             </td>
                         </tr>
-                        <tr  style="height: 180px; vertical-align: top;">
-                            <td colspan='5'style="padding-top:30px; color:#5D5D5D; font-size: 18px; line-height:100%; ">
-                                <%=rm4%>
-                            </td>
-                        </tr>
-                        <tr style="height: 20px">
-                            <td colspan='5' style="color: #F2AE8B;">
+                        <tr style="height: 50px">
+                            <!-- 해시태그 -->
+                            <td colspan='5' style="color: #e9a665; font-size: 2ch;">
                                 <%=rh4%>
                             </td>
                         </tr>
-                       </table>
+                        </table>
                     </td>
                 </tr>
-                <tr width="50%" style="background: white;">
+                <tr width="50%" style="background:#d3c9c0;">
                     <td style="vertical-align: top;">
-                        <hr width="100%"> <!--구분선-->
-                                       
-                        
-                        <div class="float-left" style="font-size: 32px; color:#5D5D5D; padding-left:30px;">
-                            <button onclick="likeup('rt4','rl4');" id ='rl4'><i class="fa fa-heart-o"></i><%=rl4%></button>
+                        <div class="float-left" style="font-size: 32px; color:white; padding-left:30px; padding-top: 30px;">
+                            <!-- <a href="/index_portfolio/likeup"><i class="fa fa-heart-o"></i><%=rl1%></a> -->
+                            <button onclick="likeup('rt4','rl4');" id ='rl4' style="color: white; border:0; outline:0; background: none;"><i class="fa fa-heart-o" style="margin-right: 10px; color: white;"></i><%=rl4%></button>
+                            <!-- filled heart = fa fa-heart (font-awesom.min.css)-->
+                        </div>
+                        <div class="float-right" style="font-size: 32px; color:white; padding-right:40px; padding-top: 30px;">
+                            <a href="/faq">
+                                <i class="fa fa-upload" style="color:white; margin-right: 15px;"></i>
+                            </a>
+                            <a>
+                                <i class="fa fa-window-close" style="color:white"></i>
+                            </a>
+                            <!-- filled heart = fa fa-heart (font-awesom.min.css)-->
                         </div>
                     </td>
                 </tr>
             </table>
+            <!-- </form> -->
         </div>
+
+
+
+
+
+        <!--========== MODAL 5 ==========-->
         <div id="my_modal5">
             <a class="modal_close_btn">
-                <i class="ti-fullscreen"></i>
-            </a>
 
-            <table width="100%" !important;>
+            </a>
+            <!-- <form action ="/index_portfolio/likesup" method="POST"> -->
+            <table width="1200px" !important;>
                 <tr>
-                    <td rowspan="2">
-                        <!--========== REVIEW SWIPER SLIDER ==========-->
+                    <td rowspan="2" >
+
                         <div id="slider-wrap">
-                                    <img id="rvi" src=<%=ri5%>
+                                    <img id="rvi" style="background: 50% 50% no-repeat; width:800px; height:800px" src=<%=ri5%>
                         </div>
-                            
-                        <!--========== END SWIPER SLIDER ==========-->
+
                     </td>
-                    <td width="50%" style="height: 320px; background:white; padding-left: 30px;  padding-right: 30px;" >
-                       <table>
-                        <tr style="height: 50px; padding-top:10px">
-                            <td colspan='5' style="font-size: 27px; color:#5D5D5D; font-weight: bold;  vertical-align:middle;" id='rt5'>
-                                <%=rt5%>
+                    <td width="50%" style="height: 600px; background:white; padding-left: 30px;  padding-right: 30px;" >
+                        <table>
+                        <tr style="height: 80px; padding-top: 30px;">
+                            <td colspan='5' style="font-size: 27px; color:#5D5D5D; font-weight: bold;  vertical-align:middle;"id ="rt5">
+                                <%=rt5%> 
                             </td>
                         </tr>
                         <tr style="height: 20px; vertical-align: bottom; ">
                             <td>
-                                <%=ru5%>
+                                작성자 :  <%=ru5%>
                             </td>
-                            <td  style=" padding-right: 10px;"> | </td>
+                            <td  style="padding-left:10px; padding-right: 10px;"> | </td>
+                            <td>
+                                장소 : <%=ra5%>
+                            </td>
+                            <td style="padding-left:10px; padding-right: 10px;"> | </td>
+                            <td  style=" padding-right: 10px;">
+                                조회수 :
+                            </td>
                             <td id = 'rv5'>
                                 <%=rv5%>
                             </td>
-                            <td  style="padding-left:10px; padding-right: 10px;"> | </td>
-                            <td>
-                                <%=ra5%>
+                        </tr>
+                        <tr  style="height: 400px; vertical-align: top;">
+                            <!-- 내용 --> 
+                            <td colspan='5'style="padding-top:30px; color:#5D5D5D; font-size: 18px; line-height:180%; " !important>
+                                <%-rm5%>
                             </td>
                         </tr>
-                        <tr  style="height: 180px; vertical-align: top;">
-                            <td colspan='5'style="padding-top:30px; color:#5D5D5D; font-size: 18px; line-height:100%; ">
-                                <%=rm5%>
-                            </td>
-                        </tr>
-                        <tr style="height: 20px">
-                            <td colspan='5' style="color: #F2AE8B;">
+                        <tr style="height: 50px">
+                            <!-- 해시태그 -->
+                            <td colspan='5' style="color: #e9a665; font-size: 2ch;">
                                 <%=rh5%>
                             </td>
                         </tr>
-                       </table>
+                        </table>
                     </td>
                 </tr>
-                <tr width="50%" style="background: white;">
+                <tr width="50%" style="background:#d3c9c0;">
                     <td style="vertical-align: top;">
-                        <hr width="100%"> <!--구분선-->
-                                       
-                        
-                        <div class="float-left" style="font-size: 32px; color:#5D5D5D; padding-left:30px;">
-                            <button onclick="likeup('rt5','rl5');" id ='rl5'><i class="fa fa-heart-o"></i><%=rl5%></button>
+                        <div class="float-left" style="font-size: 32px; color:white; padding-left:30px; padding-top: 30px;">
+                            <!-- <a href="/index_portfolio/likeup"><i class="fa fa-heart-o"></i><%=rl1%></a> -->
+                            <button onclick="likeup('rt5','rl5');" id ='rl5' style="color: white; border:0; outline:0; background: none;"><i class="fa fa-heart-o" style="margin-right: 10px; color: white;"></i><%=rl5%></button>
+                            <!-- filled heart = fa fa-heart (font-awesom.min.css)-->
+                        </div>
+                        <div class="float-right" style="font-size: 32px; color:white; padding-right:40px; padding-top: 30px;">
+                            <a href="/faq">
+                                <i class="fa fa-upload" style="color:white; margin-right: 15px;"></i>
+                            </a>
+                            <a>
+                                <i class="fa fa-window-close" style="color:white"></i>
+                            </a>
+                            <!-- filled heart = fa fa-heart (font-awesom.min.css)-->
                         </div>
                     </td>
                 </tr>
             </table>
+            <!-- </form> -->
         </div>
+
+
+
+
+        <!--========== MODAL 6 ==========-->
         <div id="my_modal6">
             <a class="modal_close_btn">
-                <i class="ti-fullscreen"></i>
-            </a>
 
-            <table width="100%" !important;>
+            </a>
+            <!-- <form action ="/index_portfolio/likesup" method="POST"> -->
+            <table width="1200px" !important;>
                 <tr>
-                    <td rowspan="2">
-                        <!--========== REVIEW SWIPER SLIDER ==========-->
+                    <td rowspan="2" >
+
                         <div id="slider-wrap">
-                                    <img id="rvi" src=<%=ri6%>
+                                    <img id="rvi" style="background: 50% 50% no-repeat; width:800px; height:800px" src=<%=ri6%>
                         </div>
-                            
-                        <!--========== END SWIPER SLIDER ==========-->
+
                     </td>
-                    <td width="50%" style="height: 320px; background:white; padding-left: 30px;  padding-right: 30px;" >
-                       <table>
-                        <tr style="height: 50px; padding-top:10px">
-                            <td colspan='5' style="font-size: 27px; color:#5D5D5D; font-weight: bold;  vertical-align:middle;" id='rt6'>
-                                <%=rt6%>
+                    <td width="50%" style="height: 600px; background:white; padding-left: 30px;  padding-right: 30px;" >
+                        <table>
+                        <tr style="height: 80px; padding-top: 30px;">
+                            <td colspan='5' style="font-size: 27px; color:#5D5D5D; font-weight: bold;  vertical-align:middle;"id ="rt6">
+                                <%=rt6%> 
                             </td>
                         </tr>
                         <tr style="height: 20px; vertical-align: bottom; ">
                             <td>
-                                <%=ru6%>
+                                작성자 :  <%=ru6%>
                             </td>
-                            <td  style=" padding-right: 10px;"> | </td>
+                            <td  style="padding-left:10px; padding-right: 10px;"> | </td>
+                            <td>
+                                장소 : <%=ra6%>
+                            </td>
+                            <td style="padding-left:10px; padding-right: 10px;"> | </td>
+                            <td  style=" padding-right: 10px;">
+                                조회수 :
+                            </td>
                             <td id = 'rv6'>
                                 <%=rv6%>
                             </td>
-                            <td  style="padding-left:10px; padding-right: 10px;"> | </td>
-                            <td>
-                                <%=ra6%>
+                        </tr>
+                        <tr  style="height: 400px; vertical-align: top;">
+                            <!-- 내용 --> 
+                            <td colspan='5'style="padding-top:30px; color:#5D5D5D; font-size: 18px; line-height:180%; " !important>
+                                <%-rm6%>
                             </td>
                         </tr>
-                        <tr  style="height: 180px; vertical-align: top;">
-                            <td colspan='5'style="padding-top:30px; color:#5D5D5D; font-size: 18px; line-height:100%; ">
-                                <%=rm6%>
-                            </td>
-                        </tr>
-                        <tr style="height: 20px">
-                            <td colspan='5' style="color: #F2AE8B;">
+                        <tr style="height: 50px">
+                            <!-- 해시태그 -->
+                            <td colspan='5' style="color: #e9a665; font-size: 2ch;">
                                 <%=rh6%>
                             </td>
                         </tr>
-                       </table>
+                        </table>
                     </td>
                 </tr>
-                <tr width="50%" style="background: white;">
+                <tr width="50%" style="background:#d3c9c0;">
                     <td style="vertical-align: top;">
-                        <hr width="100%"> <!--구분선-->
-                                       
-                        
-                        <div class="float-left" style="font-size: 32px; color:#5D5D5D; padding-left:30px;">
-                            <button onclick="likeup('rt6','rl6');" id ='rl6'><i class="fa fa-heart-o"></i><%=rl6%></button>
+                        <div class="float-left" style="font-size: 32px; color:white; padding-left:30px; padding-top: 30px;">
+                            <!-- <a href="/index_portfolio/likeup"><i class="fa fa-heart-o"></i><%=rl1%></a> -->
+                            <button onclick="likeup('rt6','rl6');" id ='rl6' style="color: white; border:0; outline:0; background: none;"><i class="fa fa-heart-o" style="margin-right: 10px; color: white;"></i><%=rl6%></button>
+                            <!-- filled heart = fa fa-heart (font-awesom.min.css)-->
+                        </div>
+                        <div class="float-right" style="font-size: 32px; color:white; padding-right:40px; padding-top: 30px;">
+                            <a href="/faq">
+                                <i class="fa fa-upload" style="color:white; margin-right: 15px;"></i>
+                            </a>
+                            <a>
+                                <i class="fa fa-window-close" style="color:white"></i>
+                            </a>
+                            <!-- filled heart = fa fa-heart (font-awesom.min.css)-->
                         </div>
                     </td>
                 </tr>
             </table>
+            <!-- </form> -->
         </div>
+
+
+
+        <!--========== MODAL 7 ==========-->
         <div id="my_modal7">
             <a class="modal_close_btn">
-                <i class="ti-fullscreen"></i>
-            </a>
 
-            <table width="100%" !important;>
+            </a>
+            <!-- <form action ="/index_portfolio/likesup" method="POST"> -->
+            <table width="1200px" !important;>
                 <tr>
-                    <td rowspan="2">
-                        <!--========== REVIEW SWIPER SLIDER ==========-->
+                    <td rowspan="2" >
+
                         <div id="slider-wrap">
-                                    <img id="rvi" src=<%=ri7%>
+                                    <img id="rvi" style="background: 50% 50% no-repeat; width:800px; height:800px" src=<%=ri7%>
                         </div>
-                            
-                        <!--========== END SWIPER SLIDER ==========-->
+
                     </td>
-                    <td width="50%" style="height: 320px; background:white; padding-left: 30px;  padding-right: 30px;" >
-                       <table>
-                        <tr style="height: 50px; padding-top:10px">
-                            <td colspan='5' style="font-size: 27px; color:#5D5D5D; font-weight: bold;  vertical-align:middle;" id='rt7'>
-                                <%=rt7%>
+                    <td width="50%" style="height: 600px; background:white; padding-left: 30px;  padding-right: 30px;" >
+                        <table>
+                        <tr style="height: 80px; padding-top: 30px;">
+                            <td colspan='5' style="font-size: 27px; color:#5D5D5D; font-weight: bold;  vertical-align:middle;"id ="rt7">
+                                <%=rt7%> 
                             </td>
                         </tr>
                         <tr style="height: 20px; vertical-align: bottom; ">
                             <td>
-                                <%=ru7%>
+                                작성자 :  <%=ru7%>
                             </td>
-                            <td  style=" padding-right: 10px;"> | </td>
+                            <td  style="padding-left:10px; padding-right: 10px;"> | </td>
+                            <td>
+                                장소 : <%=ra7%>
+                            </td>
+                            <td style="padding-left:10px; padding-right: 10px;"> | </td>
+                            <td  style=" padding-right: 10px;">
+                                조회수 :
+                            </td>
                             <td id = 'rv7'>
                                 <%=rv7%>
                             </td>
-                            <td  style="padding-left:10px; padding-right: 10px;"> | </td>
-                            <td>
-                                <%=ra7%>
+                        </tr>
+                        <tr  style="height: 400px; vertical-align: top;">
+                            <!-- 내용 --> 
+                            <td colspan='5'style="padding-top:30px; color:#5D5D5D; font-size: 18px; line-height:180%; " !important>
+                                <%-rm7%>
                             </td>
                         </tr>
-                        <tr  style="height: 180px; vertical-align: top;">
-                            <td colspan='5'style="padding-top:30px; color:#5D5D5D; font-size: 18px; line-height:100%; ">
-                                <%=rm7%>
-                            </td>
-                        </tr>
-                        <tr style="height: 20px">
-                            <td colspan='5' style="color: #F2AE8B;">
+                        <tr style="height: 50px">
+                            <!-- 해시태그 -->
+                            <td colspan='5' style="color: #e9a665; font-size: 2ch;">
                                 <%=rh7%>
                             </td>
                         </tr>
-                       </table>
+                        </table>
                     </td>
                 </tr>
-                <tr width="50%" style="background: white;">
+                <tr width="50%" style="background:#d3c9c0;">
                     <td style="vertical-align: top;">
-                        <hr width="100%"> <!--구분선-->
-                                       
-                        
-                        <div class="float-left" style="font-size: 32px; color:#5D5D5D; padding-left:30px;">
-                            <button onclick="likeup('rt7','rl7');" id ='rl7'><i class="fa fa-heart-o"></i><%=rl7%></button>
+                        <div class="float-left" style="font-size: 32px; color:white; padding-left:30px; padding-top: 30px;">
+                            <!-- <a href="/index_portfolio/likeup"><i class="fa fa-heart-o"></i><%=rl1%></a> -->
+                            <button onclick="likeup('rt7','rl7');" id ='rl7' style="color: white; border:0; outline:0; background: none;"><i class="fa fa-heart-o" style="margin-right: 10px; color: white;"></i><%=rl7%></button>
+                            <!-- filled heart = fa fa-heart (font-awesom.min.css)-->
+                        </div>
+                        <div class="float-right" style="font-size: 32px; color:white; padding-right:40px; padding-top: 30px;">
+                            <a href="/faq">
+                                <i class="fa fa-upload" style="color:white; margin-right: 15px;"></i>
+                            </a>
+                            <a>
+                                <i class="fa fa-window-close" style="color:white"></i>
+                            </a>
+                            <!-- filled heart = fa fa-heart (font-awesom.min.css)-->
                         </div>
                     </td>
                 </tr>
             </table>
+            <!-- </form> -->
         </div>
+
+
+        <!--========== MODAL 8 ==========-->
         <div id="my_modal8">
             <a class="modal_close_btn">
-                <i class="ti-fullscreen"></i>
-            </a>
 
-            <table width="100%" !important;>
+            </a>
+            <!-- <form action ="/index_portfolio/likesup" method="POST"> -->
+            <table width="1200px" !important;>
                 <tr>
-                    <td rowspan="2">
-                        <!--========== REVIEW SWIPER SLIDER ==========-->
+                    <td rowspan="2" >
+
                         <div id="slider-wrap">
-                                    <img id="rvi" src=<%=ri8%>
+                                    <img id="rvi" style="background: 50% 50% no-repeat; width:800px; height:800px" src=<%=ri8%>
                         </div>
-                            
-                        <!--========== END SWIPER SLIDER ==========-->
+
                     </td>
-                    <td width="50%" style="height: 320px; background:white; padding-left: 30px;  padding-right: 30px;" >
-                       <table>
-                        <tr style="height: 50px; padding-top:10px">
-                            <td colspan='5' style="font-size: 27px; color:#5D5D5D; font-weight: bold;  vertical-align:middle;" id='rt8'>
-                                <%=rt8%>
+                    <td width="50%" style="height: 600px; background:white; padding-left: 30px;  padding-right: 30px;" >
+                        <table>
+                        <tr style="height: 80px; padding-top: 30px;">
+                            <td colspan='5' style="font-size: 27px; color:#5D5D5D; font-weight: bold;  vertical-align:middle;"id ="rt8">
+                                <%=rt8%> 
                             </td>
                         </tr>
                         <tr style="height: 20px; vertical-align: bottom; ">
                             <td>
-                                <%=ru8%>
+                                작성자 :  <%=ru8%>
                             </td>
-                            <td  style=" padding-right: 10px;"> | </td>
+                            <td  style="padding-left:10px; padding-right: 10px;"> | </td>
+                            <td>
+                                장소 : <%=ra8%>
+                            </td>
+                            <td style="padding-left:10px; padding-right: 10px;"> | </td>
+                            <td  style=" padding-right: 10px;">
+                                조회수 :
+                            </td>
                             <td id = 'rv8'>
                                 <%=rv8%>
                             </td>
-                            <td  style="padding-left:10px; padding-right: 10px;"> | </td>
-                            <td>
-                                <%=ra8%>
+                        </tr>
+                        <tr  style="height: 400px; vertical-align: top;">
+                            <!-- 내용 --> 
+                            <td colspan='5'style="padding-top:30px; color:#5D5D5D; font-size: 18px; line-height:180%; " !important>
+                                <%-rm8%>
                             </td>
                         </tr>
-                        <tr  style="height: 180px; vertical-align: top;">
-                            <td colspan='5'style="padding-top:30px; color:#5D5D5D; font-size: 18px; line-height:100%; ">
-                                <%=rm8%>
-                            </td>
-                        </tr>
-                        <tr style="height: 20px">
-                            <td colspan='5' style="color: #F2AE8B;">
+                        <tr style="height: 50px">
+                            <!-- 해시태그 -->
+                            <td colspan='5' style="color: #e9a665; font-size: 2ch;">
                                 <%=rh8%>
                             </td>
                         </tr>
-                       </table>
+                        </table>
                     </td>
                 </tr>
-                <tr width="50%" style="background: white;">
+                <tr width="50%" style="background:#d3c9c0;">
                     <td style="vertical-align: top;">
-                        <hr width="100%"> <!--구분선-->
-                                       
-                        
-                        <div class="float-left" style="font-size: 32px; color:#5D5D5D; padding-left:30px;">
-                            <button onclick="likeup('rt8','rl8');" id ='rl8'><i class="fa fa-heart-o"></i><%=rl8%></button>
+                        <div class="float-left" style="font-size: 32px; color:white; padding-left:30px; padding-top: 30px;">
+                            <!-- <a href="/index_portfolio/likeup"><i class="fa fa-heart-o"></i><%=rl1%></a> -->
+                            <button onclick="likeup('rt8','rl8');" id ='rl8' style="color: white; border:0; outline:0; background: none;"><i class="fa fa-heart-o" style="margin-right: 10px; color: white;"></i><%=rl8%></button>
+                            <!-- filled heart = fa fa-heart (font-awesom.min.css)-->
+                        </div>
+                        <div class="float-right" style="font-size: 32px; color:white; padding-right:40px; padding-top: 30px;">
+                            <a href="/faq">
+                                <i class="fa fa-upload" style="color:white; margin-right: 15px;"></i>
+                            </a>
+                            <a>
+                                <i class="fa fa-window-close" style="color:white"></i>
+                            </a>
+                            <!-- filled heart = fa fa-heart (font-awesom.min.css)-->
                         </div>
                     </td>
                 </tr>
             </table>
+            <!-- </form> -->
         </div>
+
+
+
+        <!--========== MODAL 9 ==========-->
         <div id="my_modal9">
             <a class="modal_close_btn">
-                <i class="ti-fullscreen"></i>
-            </a>
 
-            <table width="100%" !important;>
+            </a>
+            <!-- <form action ="/index_portfolio/likesup" method="POST"> -->
+            <table width="1200px" !important;>
                 <tr>
-                    <td rowspan="2">
-                        <!--========== REVIEW SWIPER SLIDER ==========-->
+                    <td rowspan="2" >
+
                         <div id="slider-wrap">
-                                    <img id="rvi" src=<%=ri9%>
+                                    <img id="rvi" style="background: 50% 50% no-repeat; width:800px; height:800px" src=<%=ri9%>
                         </div>
-                            
-                        <!--========== END SWIPER SLIDER ==========-->
+
                     </td>
-                    <td width="50%" style="height: 320px; background:white; padding-left: 30px;  padding-right: 30px;" >
-                       <table>
-                        <tr style="height: 50px; padding-top:10px">
-                            <td colspan='5' style="font-size: 27px; color:#5D5D5D; font-weight: bold;  vertical-align:middle;" id='rt9'>
-                                <%=rt9%>
+                    <td width="50%" style="height: 600px; background:white; padding-left: 30px;  padding-right: 30px;" >
+                        <table>
+                        <tr style="height: 80px; padding-top: 30px;">
+                            <td colspan='5' style="font-size: 27px; color:#5D5D5D; font-weight: bold;  vertical-align:middle;"id ="rt9">
+                                <%=rt9%> 
                             </td>
                         </tr>
                         <tr style="height: 20px; vertical-align: bottom; ">
                             <td>
-                                <%=ru9%>
+                                작성자 :  <%=ru9%>
                             </td>
-                            <td  style=" padding-right: 10px;"> | </td>
+                            <td  style="padding-left:10px; padding-right: 10px;"> | </td>
+                            <td>
+                                장소 : <%=ra9%>
+                            </td>
+                            <td style="padding-left:10px; padding-right: 10px;"> | </td>
+                            <td  style=" padding-right: 10px;">
+                                조회수 :
+                            </td>
                             <td id = 'rv9'>
                                 <%=rv9%>
                             </td>
-                            <td  style="padding-left:10px; padding-right: 10px;"> | </td>
-                            <td>
-                                <%=ra9%>
+                        </tr>
+                        <tr  style="height: 400px; vertical-align: top;">
+                            <!-- 내용 --> 
+                            <td colspan='5'style="padding-top:30px; color:#5D5D5D; font-size: 18px; line-height:180%; " !important>
+                                <%-rm9%>
                             </td>
                         </tr>
-                        <tr  style="height: 180px; vertical-align: top;">
-                            <td colspan='5'style="padding-top:30px; color:#5D5D5D; font-size: 18px; line-height:100%; ">
-                                <%=rm9%>
-                            </td>
-                        </tr>
-                        <tr style="height: 20px">
-                            <td colspan='5' style="color: #F2AE8B;">
+                        <tr style="height: 50px">
+                            <!-- 해시태그 -->
+                            <td colspan='5' style="color: #e9a665; font-size: 2ch;">
                                 <%=rh9%>
                             </td>
                         </tr>
-                       </table>
+                        </table>
                     </td>
                 </tr>
-                <tr width="50%" style="background: white;">
+                <tr width="50%" style="background:#d3c9c0;">
                     <td style="vertical-align: top;">
-                        <hr width="100%"> <!--구분선-->
-                                       
-                        
-                        <div class="float-left" style="font-size: 32px; color:#5D5D5D; padding-left:30px;">
-                            <button onclick="likeup('rt9','rl9');" id ='rl9'><i class="fa fa-heart-o"></i><%=rl9%></button>
+                        <div class="float-left" style="font-size: 32px; color:white; padding-left:30px; padding-top: 30px;">
+                            <!-- <a href="/index_portfolio/likeup"><i class="fa fa-heart-o"></i><%=rl1%></a> -->
+                            <button onclick="likeup('rt9','rl9');" id ='rl9' style="color: white; border:0; outline:0; background: none;"><i class="fa fa-heart-o" style="margin-right: 10px; color: white;"></i><%=rl9%></button>
+                            <!-- filled heart = fa fa-heart (font-awesom.min.css)-->
+                        </div>
+                        <div class="float-right" style="font-size: 32px; color:white; padding-right:40px; padding-top: 30px;">
+                            <a href="/faq">
+                                <i class="fa fa-upload" style="color:white; margin-right: 15px;"></i>
+                            </a>
+                            <a>
+                                <i class="fa fa-window-close" style="color:white"></i>
+                            </a>
+                            <!-- filled heart = fa fa-heart (font-awesom.min.css)-->
                         </div>
                     </td>
                 </tr>
             </table>
+            <!-- </form> -->
         </div>
+
+
+        <!--========== MODAL 1 ==========-->
         <div id="my_modal10">
             <a class="modal_close_btn">
-                <i class="ti-fullscreen"></i>
-            </a>
 
-            <table width="100%" !important;>
+            </a>
+            <!-- <form action ="/index_portfolio/likesup" method="POST"> -->
+            <table width="1200px" !important;>
                 <tr>
-                    <td rowspan="2">
-                        <!--========== REVIEW SWIPER SLIDER ==========-->
+                    <td rowspan="2" >
+
                         <div id="slider-wrap">
-                                    <img id="rvi" src=<%=ri10%>
+                                    <img id="rvi" style="background: 50% 50% no-repeat; width:800px; height:800px" src=<%=ri10%>
                         </div>
-                            
-                        <!--========== END SWIPER SLIDER ==========-->
+
                     </td>
-                    <td width="50%" style="height: 320px; background:white; padding-left: 30px;  padding-right: 30px;" >
-                       <table>
-                        <tr style="height: 50px; padding-top:10px">
-                            <td colspan='5' style="font-size: 27px; color:#5D5D5D; font-weight: bold;  vertical-align:middle;" id='rt10'>
-                                <%=rt10%>
+                    <td width="50%" style="height: 600px; background:white; padding-left: 30px;  padding-right: 30px;" >
+                        <table>
+                        <tr style="height: 80px; padding-top: 30px;">
+                            <td colspan='5' style="font-size: 27px; color:#5D5D5D; font-weight: bold;  vertical-align:middle;"id ="rt10">
+                                <%=rt10%> 
                             </td>
                         </tr>
                         <tr style="height: 20px; vertical-align: bottom; ">
                             <td>
-                                <%=ru10%>
-                            </td>
-                            <td  style=" padding-right: 10px;"> | </td>
-                            <td id = 'rv10'>
-                                <%=rv10%>
+                                작성자 :  <%=ru10%>
                             </td>
                             <td  style="padding-left:10px; padding-right: 10px;"> | </td>
                             <td>
-                                <%=ra10%>
+                                장소 : <%=ra10%>
+                            </td>
+                            <td style="padding-left:10px; padding-right: 10px;"> | </td>
+                            <td  style=" padding-right: 10px;">
+                                조회수 :
+                            </td>
+                            <td id = 'rv10'>
+                                <%=rv10%>
                             </td>
                         </tr>
-                        <tr  style="height: 180px; vertical-align: top;">
-                            <td colspan='5'style="padding-top:30px; color:#5D5D5D; font-size: 18px; line-height:100%; ">
-                                <%=rm10%>
+                        <tr  style="height: 400px; vertical-align: top;">
+                            <!-- 내용 --> 
+                            <td colspan='5'style="padding-top:30px; color:#5D5D5D; font-size: 18px; line-height:180%; " !important>
+                                <%-rm10%>
                             </td>
                         </tr>
-                        <tr style="height: 20px">
-                            <td colspan='5' style="color: #F2AE8B;">
+                        <tr style="height: 50px">
+                            <!-- 해시태그 -->
+                            <td colspan='5' style="color: #e9a665; font-size: 2ch;">
                                 <%=rh10%>
                             </td>
                         </tr>
-                       </table>
+                        </table>
                     </td>
                 </tr>
-                <tr width="50%" style="background: white;">
+                <tr width="50%" style="background:#d3c9c0;">
                     <td style="vertical-align: top;">
-                        <hr width="100%"> <!--구분선-->
-                                       
-                        
-                        <div class="float-left" style="font-size: 32px; color:#5D5D5D; padding-left:30px;">
-                            <button onclick="likeup('rt10','rl10');" id ='rl10'><i class="fa fa-heart-o"></i><%=rl10%></button>
+                        <div class="float-left" style="font-size: 32px; color:white; padding-left:30px; padding-top: 30px;">
+                            <!-- <a href="/index_portfolio/likeup"><i class="fa fa-heart-o"></i><%=rl1%></a> -->
+                            <button onclick="likeup('rt10','rl10');" id ='rl10' style="color: white; border:0; outline:0; background: none;"><i class="fa fa-heart-o" style="margin-right: 10px; color: white;"></i><%=rl10%></button>
+                            <!-- filled heart = fa fa-heart (font-awesom.min.css)-->
+                        </div>
+                        <div class="float-right" style="font-size: 32px; color:white; padding-right:40px; padding-top: 30px;">
+                            <a href="/faq">
+                                <i class="fa fa-upload" style="color:white; margin-right: 15px;"></i>
+                            </a>
+                            <a>
+                                <i class="fa fa-window-close" style="color:white"></i>
+                            </a>
+                            <!-- filled heart = fa fa-heart (font-awesom.min.css)-->
                         </div>
                     </td>
                 </tr>
             </table>
+            <!-- </form> -->
         </div>
+
+
+
         <script>
             
             function likeup(id1,id2){
